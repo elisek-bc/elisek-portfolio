@@ -19,7 +19,7 @@ body {
   margin-bottom: 0;
 }
 
-.main2 {
+.main2, .image .content-wrap .content-body h2 {
   font-size: 2.625rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -58,6 +58,7 @@ html, .wrapper, .menu {
 
 .wrapper {
   position: relative;
+  height: 100vh;
 }
 
 .navbar {
@@ -65,22 +66,87 @@ html, .wrapper, .menu {
   height: 80px;
   background-color: #6F7762;
   margin: 0;
+  padding: 0px 15px;
+}
+
+.navbar .nav-link {
+  margin: 0px 30px;
 }
 
 .navbar .nav-link:hover {
   font-weight: 700;
 }
 
+.nav-item:last-child .nav-link {
+  margin-right: 0px !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .image {
   position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.image .content-wrap {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.image .content-wrap .content-body {
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.image .content-wrap img {
+  position: absolute;
+  height: 100vh;
+  bottom: 12%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+}
+
+.image.bottom {
+  background: white;
+  z-index: 1;
+}
+
+.image.bottom .content-body {
+  right: 5%;
+}
+
+.image.top {
+  background: white;
+  z-index: 2;
   width: 50%;
 }
 
-.image.left {
-  left: 0;
+.image.top .content-body {
+  left: 5%;
 }
 
-.image.right {
-  right: 0;
+.handle {
+  position: absolute;
+  height: 100%;
+  display: block;
+  background: white;
+  width: 2px;
+  top: 0;
+  left: 50%;
+  z-index: 3;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 /*# sourceMappingURL=style.css.map */

@@ -80,6 +80,7 @@ html, .wrapper, .menu {
 
 .wrapper {
     position: relative;
+    height: 100vh;
 }
 
 .navbar {
@@ -87,10 +88,11 @@ html, .wrapper, .menu {
     height: 80px;
     background-color: $green;
     margin: 0;
-
+    padding: 0px 15px;
     .nav-link {
         @extend %navfont;
         @extend .invert;
+        margin: 0px 30px;
 
         &:hover {
         font-weight: $bold;
@@ -98,13 +100,81 @@ html, .wrapper, .menu {
     }
 }
 
+.nav-item:last-child {
+    .nav-link {
+        margin-right: 0px !important;
+    }      
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
 .image {
     position: absolute;
-    width: 50%;
-    &.left {
-        left:0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    .content-wrap {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+
+        .content-body {
+            width: 25%;
+            position: absolute;
+            top: 50%;
+            text-align: center;
+            transform: translateY(-50%);
+            
+            h2 {
+                @extend .main2;
+            }
+        }
+
+        img {
+            position: absolute;
+            height: 100vh;
+            bottom: 12%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
     }
-    &.right {
-        right:0;
+
+    &.bottom {
+        background: white;
+        z-index:1;
+
+        .content-body {
+            right: 5%;
+        }
     }
+
+    &.top{
+        background: white;
+        z-index:2;
+        width: 50%;
+
+        .content-body {
+            left: 5%;
+        }
+    }
+        
 }
+
+.handle {
+    position: absolute;
+    height: 100%;
+    display: block;
+    background: white;
+    width: 2px;
+    top:0;
+    left: 50%;
+    z-index:3;
+    transform-origin: top;
+}
+
