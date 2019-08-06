@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #1D1D1B;
+}
+
+.main1 {
+  font-size: 3.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.main2 {
+  font-size: 2.625rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.special {
+  font-family: "Special Elite", cursive;
+  font-size: 1.625rem;
+  text-transform: lowercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.navbar .nav-link {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom: 0;
+}
+
+.invert, .invertbox, .navbar .nav-link {
+  color: white;
+}
+
+.invertbox {
+  background-color: #1D1D1B;
+}
+
+html, .wrapper, .menu {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.navbar {
+  width: 100vw;
+  height: 80px;
+  background-color: #6F7762;
+  margin: 0;
+}
+
+.navbar .nav-link:hover {
+  font-weight: 700;
+}
+
+.image {
+  position: absolute;
+  width: 50%;
+}
+
+.image.left {
+  left: 0;
+}
+
+.image.right {
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */

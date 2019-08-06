@@ -1,0 +1,110 @@
+// GENERAL RESET
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+// MAIN COLORS
+$green: #6F7762;
+$darkgrey:#1D1D1B;
+$beige: #E2CBB0;
+
+// MAIN FONTS
+$sansserif: "Raleway", sans-serif;
+$cursive: "Special Elite", cursive;
+
+$extrabold: 800;
+$bold: 700;
+$semibold: 600;
+$normal: 400;
+
+@function rem($sizeValue: 1.6) {
+    @return $sizeValue/16 + rem;
+};
+
+body {
+    font: {
+        family: $sansserif;
+        weight: $normal;
+    };
+    color: $darkgrey;
+}
+
+.main1 {
+    font-size: rem(60);
+    font-weight: $extrabold; 
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.main2 {
+    font-size: rem(42);
+    font-weight: $extrabold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.special {
+    font-family: $cursive;
+    font-size: rem(26);
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+%navfont {
+    font-size: rem(18);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    margin-bottom: 0;
+}
+
+.invert {
+    color: white;
+}
+
+.invertbox {
+    @extend .invert;
+    background-color: $darkgrey;
+}
+
+// MAIN LAYOUT
+html, .wrapper, .menu {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.navbar {
+    width: 100vw;
+    height: 80px;
+    background-color: $green;
+    margin: 0;
+
+    .nav-link {
+        @extend %navfont;
+        @extend .invert;
+
+        &:hover {
+        font-weight: $bold;
+        }
+    }
+}
+
+.image {
+    position: absolute;
+    width: 50%;
+    &.left {
+        left:0;
+    }
+    &.right {
+        right:0;
+    }
+}
