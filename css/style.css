@@ -28,14 +28,14 @@ body {
 
 .special {
   font-family: "Special Elite", cursive;
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   text-transform: lowercase;
   letter-spacing: 0.1em;
   margin: 0;
 }
 
 .navbar .nav-link {
-  font-size: 1.125rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.25em;
   margin-bottom: 0;
@@ -67,6 +67,10 @@ html, .wrapper, .menu {
   background-color: #6F7762;
   margin: 0;
   padding: 0px 15px;
+}
+
+.navbar .navbar-brand h1 {
+  font-size: 1.5rem;
 }
 
 .navbar .nav-link {
@@ -102,7 +106,7 @@ html, .wrapper, .menu {
 .image .content-wrap .content-body {
   width: 25%;
   position: absolute;
-  top: 50%;
+  top: 40%;
   text-align: center;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
