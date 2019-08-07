@@ -97,6 +97,17 @@ html, .wrapper, .menu {
   overflow: hidden;
 }
 
+.image a {
+  color: #1D1D1B !important;
+  -webkit-transition: font-size .5s;
+  transition: font-size .5s;
+}
+
+.image a:hover {
+  text-decoration: none;
+  font-size: 1.3125rem;
+}
+
 .image .content-wrap {
   position: absolute;
   width: 100vw;

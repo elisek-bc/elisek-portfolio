@@ -121,6 +121,15 @@ html, .wrapper, .menu {
     width: 100vw;
     overflow: hidden;
 
+    a {
+        color: $darkgrey !important;
+        transition: font-size .5s;
+        &:hover {
+            text-decoration: none;
+            font-size: rem(21);
+        }
+    }
+
     .content-wrap {
         position: absolute;
         width: 100vw;
