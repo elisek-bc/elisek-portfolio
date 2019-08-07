@@ -1,0 +1,60 @@
+@import "./colors.scss";
+
+// MAIN FONTS
+$sansserif: "Raleway", sans-serif;
+$cursive: "Special Elite", cursive;
+
+$extrabold: 800;
+$bold: 700;
+$semibold: 600;
+$normal: 400;
+
+@function rem($sizeValue: 1.6) {
+    @return $sizeValue/16 + rem;
+};
+
+body {
+    font: {
+        family: $sansserif;
+        weight: $normal;
+    };
+    color: $darkgrey;
+}
+
+.main1 {
+    font-size: rem(60);
+    font-weight: $extrabold; 
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.main2 {
+    font-size: rem(42);
+    font-weight: $extrabold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.special {
+    font-family: $cursive;
+    font-size: rem(20);
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+%navfont {
+    font-size: rem(16);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    margin-bottom: 0;
+}
+
+.invert {
+    color: white;
+}
+
+.invertbox {
+    @extend .invert;
+    background-color: $darkgrey;
+}
