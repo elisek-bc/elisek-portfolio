@@ -29,7 +29,7 @@ body {
 }
 
 .main2 {
-    font-size: rem(42);
+    font-size: rem(40);
     font-weight: $extrabold;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -54,7 +54,7 @@ body {
     color: white;
 }
 
-.invertbox {
-    @extend .invert;
-    background-color: $darkgrey;
+.text {
+ font-size: rem(15);
+ line-height: rem(26);
 }
