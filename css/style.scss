@@ -1,12 +1,11 @@
-// GENERAL RESET
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+@import "./helpers/reset.scss";
 @import "./helpers/colors.scss";
 @import "./helpers/fonts.scss";
+// HOMEPAGE
+@import "./pages/home.scss";
+// ABOUT
+@import "./pages/about-page.scss";
+
 
 // MAIN LAYOUT
 html, .wrapper, .menu {
@@ -54,8 +53,3 @@ html, .wrapper, .menu {
     padding: 0 15px;
 }
 
-// HOMEPAGE
-@import "./pages/home.scss";
-
-// ABOUT
-@import "./pages/about.scss";

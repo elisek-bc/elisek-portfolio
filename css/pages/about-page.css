@@ -53,12 +53,15 @@ body {
 }
 
 .headerimage {
-  margin-top: 120px;
+  margin-top: 40px;
+  background-color: yellow;
 }
 
 .title {
-  position: absolute;
-  width: 500px;
   z-index: 2;
 }
-/*# sourceMappingURL=about.css.map */
+
+.main-content {
+  margin-top: 40px;
+}
+/*# sourceMappingURL=about-page.css.map */
