@@ -122,8 +122,8 @@ a:hover {
 
 .banner .bannercontent .quotemarks {
   position: absolute;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  -webkit-transform: translate(96px, 10px);
+          transform: translate(96px, 10px);
   z-index: 0;
 }
 
