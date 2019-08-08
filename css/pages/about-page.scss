@@ -1,6 +1,8 @@
 @import "../helpers/colors.scss";
 @import "../helpers/fonts.scss";
 
+$height-medium: 375px;
+
 .wrapper {
     position: relative;
     overflow-y: visible;
@@ -16,17 +18,100 @@
 
 .intro {
     position: relative;
+    margin: 0 15px 75px 15px;
+
+    .row {
+        position: relative;
+        
+        .title {
+            position: absolute;
+            z-index:2;
+            transform: translateX(-5px);
+            bottom:-90px;
+        }  
+    }
 }
 
 .headerimage {
+    height: $height-medium;
+    background: url("../../ElisePhotoCV.jpg") center center no-repeat;
+    background-size: cover;
     margin-top: 40px;
-    background-color: yellow;
 }
 
-.title {
-    z-index:2;
-}
+
 
 .main-content {
-    margin-top: 40px;
+    margin-top: 180px;
+
+    &:first-child .textbox {
+        border-left: 1px solid $darkgrey;
+        
+        p {
+            padding-left: 25px;
+        }
+
+    }
+}
+
+.banner {
+    position: relative;
+    height: $height-medium;
+    background: $beige;
+
+    .quote {
+        padding-right: 30px;
+        z-index: 1;
+    }
+
+    .quotemarks {
+        position: absolute;
+        left: 16.66%;
+        transform: translateY(10px);
+        z-index: 0;
+    }
+
+    .linkbox {
+
+        transition: all 0.2s ease-in-out;
+
+        .arrow {
+            display:inline-block;
+            cursor:pointer;
+    
+            &::before{
+                content:'';
+                height:1px;
+                width:120px;
+                float:left;
+                background-color:$darkgrey;
+                display:block;
+                position:relative;
+                top:4px;
+                transition:0.2s ease-in-out;
+            }
+        
+            &::after{
+                content:'';
+                float:left;
+                border-left:5px solid $darkgrey;
+                border-right:5px solid transparent;
+                border-top:5px solid transparent;
+                border-bottom:5px solid transparent;
+            }
+        }
+
+        &:hover > .arrow::before {
+            width: 40px;
+        }
+    }
+    
+}
+
+.instagram {
+    button {
+        background: none;
+        padding: 12px;
+        border: 1px solid $darkgrey;
+    }
 }

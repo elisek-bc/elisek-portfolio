@@ -35,6 +35,19 @@ body {
   line-height: 1.625rem;
 }
 
+a {
+  color: #1D1D1B;
+}
+
+a:hover {
+  color: #1D1D1B;
+  text-decoration: none;
+}
+
+.button {
+  font-size: 1rem;
+}
+
 .wrapper {
   position: relative;
   overflow-y: visible;
@@ -50,18 +63,98 @@ body {
 
 .intro {
   position: relative;
+  margin: 0 15px 75px 15px;
+}
+
+.intro .row {
+  position: relative;
+}
+
+.intro .row .title {
+  position: absolute;
+  z-index: 2;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+  bottom: -90px;
 }
 
 .headerimage {
+  height: 375px;
+  background: url("../../ElisePhotoCV.jpg") center center no-repeat;
+  background-size: cover;
   margin-top: 40px;
-  background-color: yellow;
-}
-
-.title {
-  z-index: 2;
 }
 
 .main-content {
-  margin-top: 40px;
+  margin-top: 180px;
+}
+
+.main-content:first-child .textbox {
+  border-left: 1px solid #1D1D1B;
+}
+
+.main-content:first-child .textbox p {
+  padding-left: 25px;
+}
+
+.banner {
+  position: relative;
+  height: 375px;
+  background: #E2CBB0;
+}
+
+.banner .quote {
+  padding-right: 30px;
+  z-index: 1;
+}
+
+.banner .quotemarks {
+  position: absolute;
+  left: 16.66%;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  z-index: 0;
+}
+
+.banner .linkbox {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.banner .linkbox .arrow {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.banner .linkbox .arrow::before {
+  content: '';
+  height: 1px;
+  width: 120px;
+  float: left;
+  background-color: #1D1D1B;
+  display: block;
+  position: relative;
+  top: 4px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.banner .linkbox .arrow::after {
+  content: '';
+  float: left;
+  border-left: 5px solid #1D1D1B;
+  border-right: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.banner .linkbox:hover > .arrow::before {
+  width: 40px;
+}
+
+.instagram button {
+  background: none;
+  padding: 12px;
+  border: 1px solid #1D1D1B;
 }
 /*# sourceMappingURL=about-page.css.map */

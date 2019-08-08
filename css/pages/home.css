@@ -35,6 +35,20 @@ body {
   line-height: 1.625rem;
 }
 
+.image a {
+  -webkit-transition: font-size .5s;
+  transition: font-size .5s;
+}
+
+.image a:hover {
+  text-decoration: none;
+  font-size: 1.3125rem;
+}
+
+a {
+  color: #1D1D1B;
+}
+
 .wrapper {
   position: relative;
   height: 100vh;
@@ -46,17 +60,6 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-}
-
-.image a {
-  color: #1D1D1B !important;
-  -webkit-transition: font-size .5s;
-  transition: font-size .5s;
-}
-
-.image a:hover {
-  text-decoration: none;
-  font-size: 1.3125rem;
 }
 
 .image .content-wrap {

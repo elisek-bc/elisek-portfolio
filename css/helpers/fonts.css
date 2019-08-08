@@ -34,4 +34,17 @@ body {
   font-size: 0.9375rem;
   line-height: 1.625rem;
 }
+
+a {
+  color: #1D1D1B;
+}
+
+a:hover {
+  color: #1D1D1B;
+  text-decoration: none;
+}
+
+.button {
+  font-size: 1rem;
+}
 /*# sourceMappingURL=fonts.css.map */

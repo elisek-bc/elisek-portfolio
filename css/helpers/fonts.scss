@@ -58,3 +58,22 @@ body {
  font-size: rem(15);
  line-height: rem(26);
 }
+
+%text-animation-grow {
+    transition: font-size .5s;
+    &:hover {
+        font-size: rem(21);
+    }
+}
+
+a {
+    color: $darkgrey;
+    &:hover {
+        color: $darkgrey;
+        text-decoration: none;
+    } 
+}
+
+.button {
+    font-size: rem(16);
+}
