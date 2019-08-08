@@ -19,7 +19,7 @@ body {
 }
 
 .main2, .image .content-wrap .content-body h2 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -85,7 +85,7 @@ body {
 }
 
 .main2, .image .content-wrap .content-body h2 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -221,7 +221,7 @@ body {
 }
 
 .main2, .image .content-wrap .content-body h2 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -273,6 +273,11 @@ a:hover {
   font-size: 1rem;
 }
 
+.intro, .banner .bannercontent, .instagram {
+  max-width: 1140px;
+  margin: auto;
+}
+
 .wrapper {
   position: relative;
   overflow-y: visible;
@@ -288,7 +293,7 @@ a:hover {
 
 .intro {
   position: relative;
-  margin: 0 15px 75px 15px;
+  margin-bottom: 75px;
 }
 
 .intro .row {
@@ -324,34 +329,40 @@ a:hover {
 
 .banner {
   position: relative;
-  height: 375px;
   background: #E2CBB0;
 }
 
-.banner .quote {
-  padding-right: 30px;
+.banner .bannercontent {
+  position: relative;
+  height: 375px;
+}
+
+.banner .bannercontent .quote {
   z-index: 1;
 }
 
-.banner .quotemarks {
+.banner .bannercontent .quote h2 {
+  margin-bottom: 10px;
+}
+
+.banner .bannercontent .quotemarks {
   position: absolute;
-  left: 16.66%;
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
   z-index: 0;
 }
 
-.banner .linkbox {
+.banner .bannercontent .linkbox {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.banner .linkbox .arrow {
+.banner .bannercontent .linkbox .arrow {
   display: inline-block;
   cursor: pointer;
 }
 
-.banner .linkbox .arrow::before {
+.banner .bannercontent .linkbox .arrow::before {
   content: '';
   height: 1px;
   width: 120px;
@@ -364,7 +375,7 @@ a:hover {
   transition: 0.2s ease-in-out;
 }
 
-.banner .linkbox .arrow::after {
+.banner .bannercontent .linkbox .arrow::after {
   content: '';
   float: left;
   border-left: 5px solid #1D1D1B;
@@ -373,14 +384,47 @@ a:hover {
   border-bottom: 5px solid transparent;
 }
 
-.banner .linkbox:hover > .arrow::before {
+.banner .bannercontent .linkbox:hover > .arrow::before {
   width: 40px;
+}
+
+.instagram .mockup {
+  width: 100%;
+}
+
+.instagram .mockup .imgwrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.instagram .mockup .imgwrapper img {
+  position: absolute;
+  height: 160%;
+  margin: 0 -35%;
+  top: 25px;
+  -webkit-filter: drop-shadow(-10px 10px 10px #5f5f58) hue-rotate(25deg);
+          filter: drop-shadow(-10px 10px 10px #5f5f58) hue-rotate(25deg);
 }
 
 .instagram button {
   background: none;
   padding: 12px;
   border: 1px solid #1D1D1B;
+  margin-bottom: 100px;
+}
+
+.instagram .instatext {
+  margin-top: 100px;
+}
+
+.instagram .instatext h2 {
+  margin-bottom: 10px;
+}
+
+.instagram .instatext p {
+  margin-top: 50px;
 }
 
 html, .wrapper, .menu {

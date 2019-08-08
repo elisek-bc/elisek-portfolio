@@ -12,7 +12,7 @@ body {
 }
 
 .main2, .image .content-wrap .content-body h2 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -41,12 +41,20 @@ body {
 }
 
 .image a:hover {
-  text-decoration: none;
   font-size: 1.3125rem;
 }
 
 a {
   color: #1D1D1B;
+}
+
+a:hover {
+  color: #1D1D1B;
+  text-decoration: none;
+}
+
+.button {
+  font-size: 1rem;
 }
 
 .wrapper {

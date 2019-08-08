@@ -1,7 +1,6 @@
 @import "../helpers/colors.scss";
 @import "../helpers/fonts.scss";
-
-$height-medium: 375px;
+@import "../helpers/sizing.scss";
 
 .wrapper {
     position: relative;
@@ -17,8 +16,9 @@ $height-medium: 375px;
 }
 
 .intro {
+    @extend %boxedcontent;
     position: relative;
-    margin: 0 15px 75px 15px;
+    margin-bottom: 75px;
 
     .row {
         position: relative;
@@ -56,62 +56,105 @@ $height-medium: 375px;
 
 .banner {
     position: relative;
-    height: $height-medium;
     background: $beige;
 
-    .quote {
-        padding-right: 30px;
-        z-index: 1;
-    }
-
-    .quotemarks {
-        position: absolute;
-        left: 16.66%;
-        transform: translateY(10px);
-        z-index: 0;
-    }
-
-    .linkbox {
-
-        transition: all 0.2s ease-in-out;
-
-        .arrow {
-            display:inline-block;
-            cursor:pointer;
-    
-            &::before{
-                content:'';
-                height:1px;
-                width:120px;
-                float:left;
-                background-color:$darkgrey;
-                display:block;
-                position:relative;
-                top:4px;
-                transition:0.2s ease-in-out;
-            }
+    .bannercontent {
+        @extend %boxedcontent;
+        position:relative;
+        height: $height-medium;
         
-            &::after{
-                content:'';
-                float:left;
-                border-left:5px solid $darkgrey;
-                border-right:5px solid transparent;
-                border-top:5px solid transparent;
-                border-bottom:5px solid transparent;
+
+        .quote {
+            z-index: 1;
+    
+            h2 {
+                margin-bottom: 10px;
             }
         }
-
-        &:hover > .arrow::before {
-            width: 40px;
-        }
-    }
     
+        .quotemarks {
+            position: absolute;
+            transform: translateY(10px);
+            z-index: 0;
+        }
+    
+        .linkbox {
+            transition: all 0.2s ease-in-out;
+    
+            .arrow {
+                display:inline-block;
+                cursor:pointer;
+        
+                &::before{
+                    content:'';
+                    height:1px;
+                    width:120px;
+                    float:left;
+                    background-color:$darkgrey;
+                    display:block;
+                    position:relative;
+                    top:4px;
+                    transition:0.2s ease-in-out;
+                }
+            
+                &::after{
+                    content:'';
+                    float:left;
+                    border-left:5px solid $darkgrey;
+                    border-right:5px solid transparent;
+                    border-top:5px solid transparent;
+                    border-bottom:5px solid transparent;
+                }
+            }
+    
+            &:hover > .arrow::before {
+                width: 40px;
+            }
+        }
+    }  
 }
 
 .instagram {
+
+    @extend %boxedcontent;
+
+    .mockup {
+        width: 100%;
+
+        .imgwrapper {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                height:  160%;
+                margin: 0 -35%;
+                top: 25px;
+                filter: drop-shadow(-10px 10px 10px lighten($darkgrey, 25%)) hue-rotate(25deg);
+            }
+        }
+    }
+
     button {
         background: none;
         padding: 12px;
         border: 1px solid $darkgrey;
+        margin-bottom: 100px;
     }
+
+    .instatext {
+        margin-top: 100px;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-top: 50px;
+        }
+    }
+
+    
 }
