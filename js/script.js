@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     wrapper.addEventListener("mousemove", function(e){
         console.log(e.clientY);
     if (e.clientY > 80){
-        let calcOppWidth = window.innerWidth-(e.clientX - (window.innerWidth/2 - e.clientX)) + 'px'
+        let calcOppWidth = window.innerWidth-e.clientX + 'px';
         handle.style.left = calcOppWidth;
         topLayer.style.width = calcOppWidth;
 
