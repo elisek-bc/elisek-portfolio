@@ -4,3 +4,12 @@
 }
 
 $height-medium: 375px;
+
+@mixin scroll-animation($duration,$valbf,$valaft,$transit:opacity) {
+    #{$transit}:$valbf;
+    transition: #{$transit} $duration .25s ease-out;
+
+    &.is-visible {
+        #{$transit}:$valaft;
+    }    
+}

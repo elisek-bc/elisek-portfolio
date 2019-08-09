@@ -1,3 +1,5 @@
+//HOMEPAGE SLIDER
+
 document.addEventListener('DOMContentLoaded', function() {
     let wrapper = document.querySelector(".wrapper");
     let topLayer = wrapper.querySelector(".top");
