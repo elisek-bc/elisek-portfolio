@@ -9,10 +9,8 @@ function loop() {
     scrollInElements.forEach(function(element) {
       if (isElementInViewport(element)) {
         element.classList.add('is-visible');
-      } else {
-        element.classList.remove('is-visible');
-      }
-    });
+        }
+    }); //to remove again, add else statement with classList.remove()
     scroll(loop);
 }
 

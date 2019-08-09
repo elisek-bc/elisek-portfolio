@@ -28,6 +28,7 @@
             z-index:2;
             transform: translateX(-5px);
             bottom:-90px;
+            @include scroll-animation(.5s,translateX(-200px),translateX(0),transform);
         }  
     }
 }
@@ -37,12 +38,14 @@
     background: url("../../ElisePhotoCV.jpg") center center no-repeat;
     background-size: cover;
     margin-top: 40px;
+    @include scroll-animation(.5s,translateY(-20px),translateY(0),transform);
 }
 
 
 
 .main-content {
     margin-top: 180px;
+    @extend %text-in;
 
     &:first-child .textbox {
         border-left: 1px solid $darkgrey;
@@ -66,6 +69,7 @@
 
         .quote {
             z-index: 1;
+            @include scroll-animation(1s,translateX(150%),translateX(0),transform);
     
             h2 {
                 margin-bottom: 10px;
@@ -74,9 +78,8 @@
     
         .quotemarks {
             position: absolute;
-            transform: translate(96px,10px);
             z-index: 0;
-            @include scroll-animation(1s,0,1)
+            @include scroll-animation(1s,translate(-600px,10px),translate(96px,10px),transform);
         }
     
         .linkbox {
@@ -127,6 +130,7 @@
             width: 100%;
             position: relative;
             overflow: hidden;
+            @include scroll-animation(1s, translateX(-200px), translateX(0), transform);
 
             img {
                 position: absolute;
@@ -198,6 +202,7 @@
 	
     .instatext {
         margin-top: 100px;
+        @extend %text-in;
 
         h2 {
             margin-bottom: 10px;

@@ -7,9 +7,13 @@ $height-medium: 375px;
 
 @mixin scroll-animation($duration,$valbf,$valaft,$transit:opacity) {
     #{$transit}:$valbf;
-    transition: #{$transit} $duration .25s ease-out;
+    transition: #{$transit} $duration .25s ease;
 
     &.is-visible {
         #{$transit}:$valaft;
     }    
+}
+
+%text-in {
+    @include scroll-animation(1s,translateY(20px),translateY(0),transform);
 }

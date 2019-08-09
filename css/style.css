@@ -278,6 +278,20 @@ a:hover {
   margin: auto;
 }
 
+.main-content, .instagram .instatext {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: -webkit-transform 1s 0.25s ease;
+  transition: -webkit-transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
+}
+
+.is-visible.main-content, .instagram .is-visible.instatext {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .wrapper {
   position: relative;
   overflow-y: visible;
@@ -306,6 +320,17 @@ a:hover {
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
   bottom: -90px;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+  -webkit-transition: -webkit-transform 0.5s 0.25s ease;
+  transition: -webkit-transform 0.5s 0.25s ease;
+  transition: transform 0.5s 0.25s ease;
+  transition: transform 0.5s 0.25s ease, -webkit-transform 0.5s 0.25s ease;
+}
+
+.intro .row .title.is-visible {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .headerimage {
@@ -313,6 +338,17 @@ a:hover {
   background: url("../../ElisePhotoCV.jpg") center center no-repeat;
   background-size: cover;
   margin-top: 40px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: -webkit-transform 0.5s 0.25s ease;
+  transition: -webkit-transform 0.5s 0.25s ease;
+  transition: transform 0.5s 0.25s ease;
+  transition: transform 0.5s 0.25s ease, -webkit-transform 0.5s 0.25s ease;
+}
+
+.headerimage.is-visible {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .main-content {
@@ -339,6 +375,17 @@ a:hover {
 
 .banner .bannercontent .quote {
   z-index: 1;
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
+  -webkit-transition: -webkit-transform 1s 0.25s ease;
+  transition: -webkit-transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
+}
+
+.banner .bannercontent .quote.is-visible {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .banner .bannercontent .quote h2 {
@@ -347,16 +394,18 @@ a:hover {
 
 .banner .bannercontent .quotemarks {
   position: absolute;
-  -webkit-transform: translate(96px, 10px);
-          transform: translate(96px, 10px);
   z-index: 0;
-  opacity: 0;
-  -webkit-transition: opacity 3s 0.25s ease-out;
-  transition: opacity 3s 0.25s ease-out;
+  -webkit-transform: translate(-600px, 10px);
+          transform: translate(-600px, 10px);
+  -webkit-transition: -webkit-transform 1s 0.25s ease;
+  transition: -webkit-transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
 .banner .bannercontent .quotemarks.is-visible {
-  opacity: 1;
+  -webkit-transform: translate(96px, 10px);
+          transform: translate(96px, 10px);
 }
 
 .banner .bannercontent .linkbox {
@@ -404,6 +453,17 @@ a:hover {
   width: 100%;
   position: relative;
   overflow: hidden;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+  -webkit-transition: -webkit-transform 1s 0.25s ease;
+  transition: -webkit-transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
+}
+
+.instagram .mockup .imgwrapper.is-visible {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .instagram .mockup .imgwrapper img {
@@ -528,5 +588,67 @@ html, .wrapper, .menu {
   border: 5px solid white;
   height: 60px;
   padding: 0 15px;
+}
+
+.contact {
+  z-index: 10;
+  position: fixed;
+  height: 130px;
+  width: 245px;
+  right: -203px;
+  top: 220px;
+  -webkit-filter: drop-shadow(0px 5px 15px #9f9f98);
+          filter: drop-shadow(0px 5px 15px #9f9f98);
+  -webkit-transition: right .5s ease;
+  transition: right .5s ease;
+}
+
+.contact .imgwrapper {
+  position: relative;
+}
+
+.contact .imgwrapper img {
+  z-index: 2;
+}
+
+.contact .imgwrapper .imgcontent {
+  position: absolute;
+  z-index: 3;
+  height: 90%;
+  max-width: 95%;
+  border-top: 1px solid #1D1D1B;
+  border-bottom: 1px solid #1D1D1B;
+}
+
+.contact .imgwrapper .imgcontent::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  width: 1px;
+  height: 100%;
+  background: #1D1D1B;
+}
+
+.contact .imgwrapper .imgcontent h3 {
+  -webkit-transform: rotate(90deg) translateY(-15px);
+          transform: rotate(90deg) translateY(-15px);
+}
+
+.contact .imgwrapper ul {
+  list-style: none;
+  margin: 0;
+}
+
+.contact .imgwrapper ul a:hover {
+  text-decoration: underline;
+}
+
+.contact .imgwrapper .text {
+  font-size: smaller;
+  margin-right: 20px;
+}
+
+.contact:hover {
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
