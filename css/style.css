@@ -273,7 +273,7 @@ a:hover {
   font-size: 1rem;
 }
 
-.intro, .banner .bannercontent, .instagram, .main-content-services {
+.intro, .banner .bannercontent, .instagram, .main-content-services, .development {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -619,7 +619,7 @@ a:hover {
   font-size: 1rem;
 }
 
-.intro, .banner .bannercontent, .instagram, .main-content-services {
+.intro, .banner .bannercontent, .instagram, .main-content-services, .development {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -705,6 +705,143 @@ a:hover {
     border-left: 1px solid #1D1D1B;
     border-right: 1px solid #1D1D1B;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #1D1D1B;
+}
+
+.main1 {
+  font-size: 3.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.main2, .image .content-wrap .content-body h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.special {
+  font-family: "Special Elite", cursive;
+  font-size: 1.25rem;
+  text-transform: lowercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.main-content-services h3, .navbar .nav-link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom: 0;
+}
+
+.invert, .navbar .nav-link {
+  color: white;
+}
+
+.text {
+  font-size: 0.9375rem;
+  line-height: 1.625rem;
+}
+
+.image a {
+  -webkit-transition: font-size .5s;
+  transition: font-size .5s;
+}
+
+.image a:hover {
+  font-size: 1.3125rem;
+}
+
+a {
+  color: #1D1D1B;
+}
+
+a:hover {
+  color: #1D1D1B;
+  text-decoration: none;
+}
+
+.button {
+  font-size: 1rem;
+}
+
+.intro, .banner .bannercontent, .instagram, .main-content-services, .development {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.main-content, .instagram .instatext {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: -webkit-transform 1s 0.25s ease;
+  transition: -webkit-transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
+}
+
+.is-visible.main-content, .instagram .is-visible.instatext {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.development .filter {
+  position: relative;
+}
+
+.development .filter .horizontal-line {
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  background: #1D1D1B;
+  z-index: -1;
+}
+
+.development .filter button {
+  position: relative;
+  background: white;
+  padding: 12px;
+  border: 1px solid #1D1D1B;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #1D1D1B;
+}
+
+.development .filter button.fe-filter {
+  margin-right: 8px;
+}
+
+.development .filter button.be-filter {
+  margin-left: 8px;
+}
+
+.development .filter button .active {
+  display: inline-block;
+}
+
+.development .filter .spannend {
+  display: none;
+}
+
+.development .filter .active {
+  display: inline-block !important;
 }
 
 html, .wrapper, .menu {

@@ -1,0 +1,50 @@
+@import "../helpers/reset.scss";
+@import "../helpers/colors.scss";
+@import "../helpers/fonts.scss";
+@import "../helpers/sizing.scss";
+
+.development {
+    @extend %boxedcontent;
+    .filter {
+        position: relative;
+
+        .horizontal-line {
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            top:50%;
+            background: $darkgrey;
+            z-index: -1;
+        }
+
+        button {
+            position: relative;
+            background: white;
+            padding: 12px;
+            border: 1px solid $darkgrey;
+            user-select: none;
+            color: $darkgrey;
+
+            &.fe-filter {
+                margin-right: 8px;
+            }
+
+            &.be-filter {
+                margin-left: 8px;
+            }
+            
+            .active {
+                display:inline-block;
+            }
+        }
+
+        .spannend {
+            display: none;
+        }
+        .active {
+            display: inline-block;
+        }
+    }   
+};
+
+
