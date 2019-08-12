@@ -50,7 +50,7 @@ a:hover {
 
 .intro, .banner .bannercontent, .instagram {
   max-width: 1140px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .main-content, .instagram .instatext {
@@ -82,7 +82,7 @@ a:hover {
 
 .intro {
   position: relative;
-  margin-bottom: 75px;
+  margin-bottom: 75px !important;
 }
 
 .intro .row {
@@ -268,6 +268,7 @@ a:hover {
   height: 0%;
   position: absolute;
   visibility: hidden;
+  z-index: -10;
 }
 
 .instagram button:before {
@@ -277,6 +278,7 @@ a:hover {
   transition: width 0.1s ease 0.3s, height 0.1s ease 0.2s, visibility 0s 0.4s;
   top: 0;
   left: 0;
+  z-index: -10;
 }
 
 .instagram button:after {
@@ -284,6 +286,7 @@ a:hover {
   border-bottom: 1px solid #1D1D1B;
   bottom: 0;
   right: 0;
+  z-index: -10;
   -webkit-transition: width 0.1s ease 0.1s, height 0.1s ease, visibility 0s 0.2s;
   transition: width 0.1s ease 0.1s, height 0.1s ease, visibility 0s 0.2s;
 }
@@ -298,16 +301,19 @@ a:hover {
   width: 100%;
   height: 100%;
   visibility: visible;
+  z-index: -10;
 }
 
 .instagram button:hover:before {
   -webkit-transition: width 0.1s ease, height 0.1s ease 0.1s;
   transition: width 0.1s ease, height 0.1s ease 0.1s;
+  z-index: -10;
 }
 
 .instagram button:hover:after {
   -webkit-transition: width 0.1s ease 0.2s, height 0.1s ease 0.3s, visibility 0s 0.2s;
   transition: width 0.1s ease 0.2s, height 0.1s ease 0.3s, visibility 0s 0.2s;
+  z-index: -10;
 }
 
 .instagram .instatext {

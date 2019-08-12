@@ -5,6 +5,8 @@
 @import "./pages/home.scss";
 // ABOUT
 @import "./pages/about-page.scss";
+// SERVICES
+@import "./pages/services.scss";
 
 
 // MAIN LAYOUT
@@ -21,6 +23,7 @@ html, .wrapper, .menu {
     background-color: $green;
     margin: 0;
     padding: 0px 15px;
+    
     .navbar-brand h1 {
         font-size: rem(24);
     }

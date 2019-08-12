@@ -18,7 +18,7 @@
 .intro {
     @extend %boxedcontent;
     position: relative;
-    margin-bottom: 75px;
+    margin-bottom: 75px !important;
 
     .row {
         position: relative;
@@ -161,7 +161,8 @@
 		    width: 0%;
 		    height: 0%;
 		    position: absolute;
-		    visibility: hidden;
+            visibility: hidden;
+            z-index: -10;
         }
 
         &:before {
@@ -169,15 +170,17 @@
 		    border-right: $border-width solid $darkgrey;
 		    transition: width $t_dur ease $t_dur * 3, height $t_dur ease $t_dur * 2, visibility 0s $t_dur * 4;
 		    top: 0;
-		    left: 0;
+            left: 0;
+            z-index: -10;
         }
         
         &:after {
             border-left: $border-width solid $darkgrey;
 		    border-bottom: $border-width solid $darkgrey;
 		    bottom: 0;
-		    right: 0;
-		    transition: width $t_dur ease $t_dur, height $t_dur ease, visibility 0s $t_dur * 2;
+            right: 0;
+            z-index: -10;
+            transition: width $t_dur ease $t_dur, height $t_dur ease, visibility 0s $t_dur * 2;
         }
 		
 	    &:hover {
@@ -187,15 +190,18 @@
 		    &:before, &:after {
                 width: 100%;
 			    height: 100%;
-			    visibility: visible;
+                visibility: visible;
+                z-index: -10;
             }
 			
 		    &:before {
                 transition: width $t_dur ease, height $t_dur ease $t_dur;
+                z-index: -10;
             }
 			
 		    &:after {
                 transition: width $t_dur ease $t_dur * 2, height $t_dur ease $t_dur * 3, visibility 0s $t_dur * 2;
+                z-index: -10;
             }		
         }
     }
