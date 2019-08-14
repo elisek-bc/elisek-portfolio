@@ -9,6 +9,8 @@
 @import "./pages/services.scss";
 // DEVELOPMENT
 @import "./pages/development.scss";
+// DESIGN
+@import "./pages/design.scss";
 
 
 // MAIN LAYOUT
@@ -18,6 +20,8 @@ html, .wrapper, .menu {
     width: 100vw;
     overflow-x: hidden;
 }
+
+// NAVBAR
 
 .navbar {
     width: 100vw;
@@ -51,11 +55,85 @@ html, .wrapper, .menu {
     padding-left: 0;
 }
 
+// FONT RELATED
+
+.title {
+    margin: 90px 0 80px 0;
+
+    .sub-title {
+        margin-top: 1rem;
+    }
+}
+
 .blackbox {
     background-color: $darkgrey;
     border: 5px solid white;
     height: 60px;
     padding: 0 15px;
+}
+
+
+// BUTTON STYLING
+
+$border-width: 1px;
+$t_dur: .1s;
+$a_dur: 1s;
+
+button {
+    position: relative;
+    background: none;
+    padding: 12px;
+    border: 1px solid $beige;
+    user-select: none;
+
+    &:before, &:after {
+        content: '';
+        width: 0%;
+        height: 0%;
+        position: absolute;
+        visibility: hidden;
+        z-index: -10;
+    }
+
+    &:before {
+        border-top: $border-width solid $darkgrey;
+        border-right: $border-width solid $darkgrey;
+        transition: width $t_dur ease $t_dur * 3, height $t_dur ease $t_dur * 2, visibility 0s $t_dur * 4;
+        top: 0;
+        left: 0;
+        z-index: -10;
+    }
+    
+    &:after {
+        border-left: $border-width solid $darkgrey;
+        border-bottom: $border-width solid $darkgrey;
+        bottom: 0;
+        right: 0;
+        z-index: -10;
+        transition: width $t_dur ease $t_dur, height $t_dur ease, visibility 0s $t_dur * 2;
+    }
+    
+    &:hover {
+        animation: pulse $a_dur ease-out $t_dur * 4;
+        color: $green;
+        
+        &:before, &:after {
+            width: 100%;
+            height: 100%;
+            visibility: visible;
+            z-index: -10;
+        }
+        
+        &:before {
+            transition: width $t_dur ease, height $t_dur ease $t_dur;
+            z-index: -10;
+        }
+        
+        &:after {
+            transition: width $t_dur ease $t_dur * 2, height $t_dur ease $t_dur * 3, visibility 0s $t_dur * 2;
+            z-index: -10;
+        }		
+    }
 }
 
 // CONTACT BANNER
@@ -157,3 +235,47 @@ html, .wrapper, .menu {
         }
     }   
 }
+
+// FILTER
+
+.filter {
+    position: relative;
+
+    .horizontal-line {
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        top:50%;
+        background: $darkgrey;
+        z-index: -1;
+    }
+
+    button {
+        position: relative;
+        background: white;
+        padding: 12px;
+        border: 1px solid $darkgrey;
+        user-select: none;
+        color: $darkgrey;
+        margin: 0 8px;
+
+        &:focus, &:active {
+            outline: none;
+            border-color: inherit;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        &:first-child {
+            margin: 0 8px 0 0;
+        }
+
+        &:last-child {
+            margin: 0 0 0 8px;
+        }
+
+        &.active {
+            font-weight: $bold;
+        }
+    }
+}   

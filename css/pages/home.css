@@ -26,7 +26,14 @@ body {
   margin: 0;
 }
 
-.invert {
+.org {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom: 0;
+}
+
+.invert, .org {
   color: white;
 }
 
@@ -55,6 +62,14 @@ a:hover {
 
 .button {
   font-size: 1rem;
+}
+
+.org {
+  padding: 10px;
+  background: #1D1D1B;
+  text-align: center;
+  width: 30%;
+  border: 5px solid #6F7762;
 }
 
 .wrapper {

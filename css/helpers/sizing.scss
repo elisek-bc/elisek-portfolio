@@ -3,7 +3,11 @@
     margin: 0 auto;
 }
 
-$height-medium: 375px;
+$large: 600px;
+$medium: 375px;
+$small: 160px;
+$xsmall: 80px;
+$xxs: 40px;
 
 @mixin scroll-animation($duration,$valbf,$valaft,$transit:opacity) {
     #{$transit}:$valbf;

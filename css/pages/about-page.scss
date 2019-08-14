@@ -23,7 +23,7 @@
     .row {
         position: relative;
         
-        .title {
+        .headertext {
             position: absolute;
             z-index:2;
             transform: translateX(-5px);
@@ -34,7 +34,7 @@
 }
 
 .headerimage {
-    height: $height-medium;
+    height: $medium;
     background: url("../../ElisePhotoCV.jpg") center center no-repeat;
     background-size: cover;
     margin-top: 40px;
@@ -64,7 +64,7 @@
     .bannercontent {
         @extend %boxedcontent;
         position:relative;
-        height: $height-medium;
+        height: $medium;
         
 
         .quote {
@@ -142,69 +142,10 @@
         }
     }
 
-    //button config for animation
-
-    $border-width: 1px;
-    $t_dur: .1s;
-    $a_dur: 1s;
-
     button {
-        position: relative;
-        background: none;
-        padding: 12px;
-        border: 1px solid $beige;
-        margin-bottom: 100px;
-        user-select: none;
-
-        &:before, &:after {
-            content: '';
-		    width: 0%;
-		    height: 0%;
-		    position: absolute;
-            visibility: hidden;
-            z-index: -10;
-        }
-
-        &:before {
-            border-top: $border-width solid $darkgrey;
-		    border-right: $border-width solid $darkgrey;
-		    transition: width $t_dur ease $t_dur * 3, height $t_dur ease $t_dur * 2, visibility 0s $t_dur * 4;
-		    top: 0;
-            left: 0;
-            z-index: -10;
-        }
-        
-        &:after {
-            border-left: $border-width solid $darkgrey;
-		    border-bottom: $border-width solid $darkgrey;
-		    bottom: 0;
-            right: 0;
-            z-index: -10;
-            transition: width $t_dur ease $t_dur, height $t_dur ease, visibility 0s $t_dur * 2;
-        }
-		
-	    &:hover {
-            animation: pulse $a_dur ease-out $t_dur * 4;
-            color: $green;
-            
-		    &:before, &:after {
-                width: 100%;
-			    height: 100%;
-                visibility: visible;
-                z-index: -10;
-            }
-			
-		    &:before {
-                transition: width $t_dur ease, height $t_dur ease $t_dur;
-                z-index: -10;
-            }
-			
-		    &:after {
-                transition: width $t_dur ease $t_dur * 2, height $t_dur ease $t_dur * 3, visibility 0s $t_dur * 2;
-                z-index: -10;
-            }		
-        }
+        margin-bottom: $xsmall;
     }
+
 	
     .instatext {
         margin-top: 100px;

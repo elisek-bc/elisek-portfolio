@@ -33,7 +33,14 @@ body {
   margin: 0;
 }
 
-.invert {
+.org {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom: 0;
+}
+
+.invert, .org {
   color: white;
 }
 
@@ -55,53 +62,78 @@ a:hover {
   font-size: 1rem;
 }
 
+.org {
+  padding: 10px;
+  background: #1D1D1B;
+  text-align: center;
+  width: 30%;
+  border: 5px solid #6F7762;
+}
+
 .development {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-.development .filter {
+.item {
+  padding: 50px;
+  margin-top: 160px;
   position: relative;
+  max-height: 100%;
+  text-align: center;
 }
 
-.development .filter .horizontal-line {
-  height: 1px;
-  width: 100%;
+.item h4 {
+  position: relative;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #1D1D1B;
+}
+
+.item .text {
+  margin: 40px 0;
+}
+
+.item .portfolio-image {
+  background: grey;
+  top: -50px;
   position: absolute;
-  top: 50%;
-  background: #1D1D1B;
-  z-index: -1;
+  z-index: 1;
 }
 
-.development .filter button {
-  position: relative;
+.item .portfolio-image.left {
+  left: 50px;
+  right: auto;
+}
+
+.item .portfolio-image.right {
+  left: auto;
+  right: 50px;
+}
+
+.item .portfolio-text {
   background: white;
-  padding: 12px;
-  border: 1px solid #1D1D1B;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  color: #1D1D1B;
-  margin: 0 8px;
+  padding: 50px;
+  position: relative;
+  z-index: 2;
 }
 
-.development .filter button:focus, .development .filter button:active {
-  outline: none;
-  border-color: inherit;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+.item .portfolio-text .org {
+  position: absolute;
+  text-align: center;
+  top: -25px;
+  left: 35%;
 }
 
-.development .filter button:first-child {
-  margin: 0 8px 0 0;
+.item.front-end {
+  background: #6F7762;
 }
 
-.development .filter button:last-child {
-  margin: 0 0 0 8px;
+.item.back-end {
+  background: #E2CBB0;
+  width: 50%;
 }
 
-.development .filter button.active {
-  font-weight: 700;
+.item.back-end .org {
+  border-color: #E2CBB0;
 }
 /*# sourceMappingURL=development.css.map */

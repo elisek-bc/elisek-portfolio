@@ -7,14 +7,6 @@
     overflow-y: visible;
 }
 
-.title-services {
-    margin: 90px 0 80px 0;
-
-    .sub-title {
-        margin-top: 1rem;
-    }
-}
-
 .main-content-services {
     @extend %boxedcontent;
     margin-bottom: 80px;

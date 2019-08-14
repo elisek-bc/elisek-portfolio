@@ -26,7 +26,14 @@ body {
   margin: 0;
 }
 
-.invert {
+.org {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom: 0;
+}
+
+.invert, .org {
   color: white;
 }
 
@@ -46,6 +53,14 @@ a:hover {
 
 .button {
   font-size: 1rem;
+}
+
+.org {
+  padding: 10px;
+  background: #1D1D1B;
+  text-align: center;
+  width: 30%;
+  border: 5px solid #6F7762;
 }
 
 .intro, .banner .bannercontent, .instagram {
@@ -89,7 +104,7 @@ a:hover {
   position: relative;
 }
 
-.intro .row .title {
+.intro .row .headertext {
   position: absolute;
   z-index: 2;
   -webkit-transform: translateX(-5px);
@@ -103,7 +118,7 @@ a:hover {
   transition: transform 0.5s 0.25s ease, -webkit-transform 0.5s 0.25s ease;
 }
 
-.intro .row .title.is-visible {
+.intro .row .headertext.is-visible {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -251,69 +266,7 @@ a:hover {
 }
 
 .instagram button {
-  position: relative;
-  background: none;
-  padding: 12px;
-  border: 1px solid #E2CBB0;
-  margin-bottom: 100px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.instagram button:before, .instagram button:after {
-  content: '';
-  width: 0%;
-  height: 0%;
-  position: absolute;
-  visibility: hidden;
-  z-index: -10;
-}
-
-.instagram button:before {
-  border-top: 1px solid #1D1D1B;
-  border-right: 1px solid #1D1D1B;
-  -webkit-transition: width 0.1s ease 0.3s, height 0.1s ease 0.2s, visibility 0s 0.4s;
-  transition: width 0.1s ease 0.3s, height 0.1s ease 0.2s, visibility 0s 0.4s;
-  top: 0;
-  left: 0;
-  z-index: -10;
-}
-
-.instagram button:after {
-  border-left: 1px solid #1D1D1B;
-  border-bottom: 1px solid #1D1D1B;
-  bottom: 0;
-  right: 0;
-  z-index: -10;
-  -webkit-transition: width 0.1s ease 0.1s, height 0.1s ease, visibility 0s 0.2s;
-  transition: width 0.1s ease 0.1s, height 0.1s ease, visibility 0s 0.2s;
-}
-
-.instagram button:hover {
-  -webkit-animation: pulse 1s ease-out 0.4s;
-          animation: pulse 1s ease-out 0.4s;
-  color: #6F7762;
-}
-
-.instagram button:hover:before, .instagram button:hover:after {
-  width: 100%;
-  height: 100%;
-  visibility: visible;
-  z-index: -10;
-}
-
-.instagram button:hover:before {
-  -webkit-transition: width 0.1s ease, height 0.1s ease 0.1s;
-  transition: width 0.1s ease, height 0.1s ease 0.1s;
-  z-index: -10;
-}
-
-.instagram button:hover:after {
-  -webkit-transition: width 0.1s ease 0.2s, height 0.1s ease 0.3s, visibility 0s 0.2s;
-  transition: width 0.1s ease 0.2s, height 0.1s ease 0.3s, visibility 0s 0.2s;
-  z-index: -10;
+  margin-bottom: 80px;
 }
 
 .instagram .instatext {

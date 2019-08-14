@@ -77,3 +77,13 @@ a {
 .button {
     font-size: rem(16);
 }
+
+.org {
+    @extend %navfont;
+    @extend .invert;
+    padding: 10px;
+    background: $darkgrey;
+    text-align: center;
+    width: 30%;
+    border: 5px solid $green;
+}

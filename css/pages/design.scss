@@ -1,0 +1,8 @@
+@import "../helpers/reset.scss";
+@import "../helpers/colors.scss";
+@import "../helpers/fonts.scss";
+@import "../helpers/sizing.scss";
+
+.design {
+    @extend %boxedcontent;
+};
