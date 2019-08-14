@@ -822,26 +822,26 @@ a:hover {
       -ms-user-select: none;
           user-select: none;
   color: #1D1D1B;
+  margin: 0 8px;
 }
 
-.development .filter button.fe-filter {
-  margin-right: 8px;
+.development .filter button:focus, .development .filter button:active {
+  outline: none;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
-.development .filter button.be-filter {
-  margin-left: 8px;
+.development .filter button:first-child {
+  margin: 0 8px 0 0;
 }
 
-.development .filter button .active {
-  display: inline-block;
+.development .filter button:last-child {
+  margin: 0 0 0 8px;
 }
 
-.development .filter .spannend {
-  display: none;
-}
-
-.development .filter .active {
-  display: inline-block !important;
+.development .filter button.active {
+  font-weight: 700;
 }
 
 html, .wrapper, .menu {
