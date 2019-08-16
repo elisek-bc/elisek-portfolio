@@ -35,7 +35,7 @@
         img {
             position: absolute;
             height: 100vh;
-            bottom: 12%;
+            //bottom: 12%;
             left: 50%;
             transform: translateX(-50%);
             z-index: -1;
@@ -45,6 +45,7 @@
     &.bottom {
         background: white;
         z-index:1;
+        left: -7px;
 
         .content-body {
             right: 5%;
