@@ -17,7 +17,7 @@
 
 .main-content-services {
     @extend %boxedcontent;
-    margin-bottom: 80px;
+    margin-bottom: 80px !important;
 
     .row > *{
         padding: 10% 5%;
@@ -27,12 +27,11 @@
     
     img {
         margin-bottom: 1.5rem;
-        height: 20%;
     }
 
     h3 {
         @extend %navfont;
-        margin-bottom: 1rem;
+        margin-bottom: 1rem !important;
     }
 
     strong {
