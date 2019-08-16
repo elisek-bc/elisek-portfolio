@@ -5,46 +5,67 @@
 
 .development {
     @extend %boxedcontent;
-    .filter {
-        position: relative;
-
-        .horizontal-line {
-            height: 1px;
-            width: 100%;
-            position: absolute;
-            top:50%;
-            background: $darkgrey;
-            z-index: -1;
-        }
-
-        button {
-            position: relative;
-            background: white;
-            padding: 12px;
-            border: 1px solid $darkgrey;
-            user-select: none;
-            color: $darkgrey;
-
-            &.fe-filter {
-                margin-right: 8px;
-            }
-
-            &.be-filter {
-                margin-left: 8px;
-            }
-            
-            .active {
-                display:inline-block;
-            }
-        }
-
-        .spannend {
-            display: none;
-        }
-        .active {
-            display: inline-block;
-        }
-    }   
 };
+
+.item {
+    padding: 50px;
+    margin-top: $small;
+    position:relative;
+    max-height: 100%;
+    text-align: center;
+
+    h4{
+        position: relative;
+        padding-bottom: $xxs;
+        border-bottom: 1px solid $darkgrey;
+    }
+
+    .text {
+        margin: $xxs 0;
+    }
+
+    .portfolio-image {
+        background: grey;
+        top: -50px;
+        position: absolute;
+        z-index: 1;
+
+        &.left{
+            left:50px;
+            right: auto;
+        }
+        &.right{
+            left:auto;
+            right: 50px;
+        }
+    }
+
+    .portfolio-text {
+        background: white;
+        padding: 50px;
+        position: relative;
+        z-index: 2;
+
+        .org {
+            position:absolute;
+            text-align:center;
+            top: -25px;
+            left: 35%;
+        }
+    }
+
+    &.front-end{
+        background: $green;
+    }
+
+    &.back-end {
+        background: $beige;
+        width: 50%;
+        
+        .org {
+            border-color: $beige;
+        }
+    }
+}
 
 
