@@ -76,6 +76,20 @@ a:hover {
 }
 
 .item {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: -webkit-transform 1s 0.25s ease;
+  transition: -webkit-transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
+}
+
+.is-visible.item {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.item {
   padding: 50px;
   margin-top: 160px;
   position: relative;
@@ -130,10 +144,13 @@ a:hover {
 
 .item.back-end {
   background: #E2CBB0;
-  width: 50%;
 }
 
 .item.back-end .org {
   border-color: #E2CBB0;
+}
+
+.backend-container {
+  margin-bottom: 80px;
 }
 /*# sourceMappingURL=development.css.map */

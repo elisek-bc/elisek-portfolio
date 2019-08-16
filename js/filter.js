@@ -20,7 +20,7 @@ function toggleItems(dataClass){
         }
     }else{
         for(let i = 0; i<allItems.length; i++){
-            allItems[i].dataset.filter === dataClass ? allItems[i].style.display = 'flex' : allItems[i].style.display = 'none';
+            allItems[i].classList.contains(dataClass) ? allItems[i].style.display = 'flex' : allItems[i].style.display = 'none';
         }
     }
 }
@@ -29,6 +29,7 @@ buttonArray.forEach((button) => {
     button.addEventListener('click', function(){
         toggleActiveClass(button);
         toggleItems(button.dataset.filter);
+        console.log(button.dataset.filter);
     })
 });
 

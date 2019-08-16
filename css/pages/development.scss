@@ -8,6 +8,7 @@
 };
 
 .item {
+    @extend %text-in;
     padding: 50px;
     margin-top: $small;
     position:relative;
@@ -60,12 +61,15 @@
 
     &.back-end {
         background: $beige;
-        width: 50%;
         
         .org {
             border-color: $beige;
         }
     }
+}
+
+.backend-container {
+    margin-bottom: $xsmall;
 }
 
 

@@ -302,7 +302,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext {
+.main-content, .instagram .instatext, .item {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -311,7 +311,7 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext {
+.is-visible.main-content, .instagram .is-visible.instatext, .is-visible.item {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -594,7 +594,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext {
+.main-content, .instagram .instatext, .item {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -603,7 +603,7 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext {
+.is-visible.main-content, .instagram .is-visible.instatext, .is-visible.item {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -754,7 +754,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext {
+.main-content, .instagram .instatext, .item {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -763,7 +763,7 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext {
+.is-visible.main-content, .instagram .is-visible.instatext, .is-visible.item {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -823,11 +823,14 @@ a:hover {
 
 .item.back-end {
   background: #E2CBB0;
-  width: 50%;
 }
 
 .item.back-end .org {
   border-color: #E2CBB0;
+}
+
+.backend-container {
+  margin-bottom: 80px;
 }
 
 * {
@@ -916,7 +919,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext {
+.main-content, .instagram .instatext, .item {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -925,7 +928,7 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext {
+.is-visible.main-content, .instagram .is-visible.instatext, .is-visible.item {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
