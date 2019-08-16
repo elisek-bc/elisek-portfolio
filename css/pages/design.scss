@@ -5,4 +5,5 @@
 
 .design {
     @extend %boxedcontent;
-};
+    min-height: 100vh;
+}

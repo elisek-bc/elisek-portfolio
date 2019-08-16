@@ -29,7 +29,6 @@ buttonArray.forEach((button) => {
     button.addEventListener('click', function(){
         toggleActiveClass(button);
         toggleItems(button.dataset.filter);
-        console.log(button.dataset.filter);
     })
 });
 

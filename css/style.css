@@ -930,6 +930,10 @@ a:hover {
           transform: translateY(0);
 }
 
+.design {
+  min-height: 100vh;
+}
+
 html, .wrapper, .menu {
   margin: 0;
   padding: 0;
