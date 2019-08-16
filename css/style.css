@@ -153,9 +153,7 @@ a:hover {
   border: 5px solid #6F7762;
 }
 
-.wrapper {
-  position: relative;
-  height: 100vh;
+.home {
   overflow: hidden;
 }
 
@@ -318,7 +316,7 @@ a:hover {
 
 .wrapper {
   position: relative;
-  overflow-y: visible;
+  height: 100vh;
 }
 
 .colorrect {
@@ -500,7 +498,7 @@ a:hover {
 }
 
 .instagram button {
-  margin-bottom: 80px;
+  margin-bottom: 160px;
 }
 
 .instagram .instatext {
@@ -610,7 +608,6 @@ a:hover {
 
 .wrapper {
   position: relative;
-  overflow-y: visible;
 }
 
 .main-content-services {
@@ -1094,7 +1091,7 @@ button:hover:after {
     height: 130px;
     width: 245px;
     right: -203px;
-    top: 220px;
+    top: 40vh;
     -webkit-filter: drop-shadow(0px 5px 15px #9f9f98);
             filter: drop-shadow(0px 5px 15px #9f9f98);
     -webkit-transition: right .5s ease;
@@ -1186,5 +1183,54 @@ button:hover:after {
 
 .filter button.active {
   font-weight: 700;
+}
+
+.footer {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  .footer {
+    display: block;
+    bottom: 0;
+    width: 100vw;
+  }
+  .footer div {
+    height: 40px;
+    background: #6F7762;
+    position: relative;
+    text-align: center;
+  }
+  .footer div .bulb {
+    background: url(../footer-bulb-instagram.png) center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100vw;
+    top: -40px;
+  }
+  .footer div a {
+    position: relative;
+  }
+  .footer div a .footer-logo {
+    position: absolute;
+    top: 10px;
+    left: -21px;
+    height: 42px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+  }
+  .footer div a .footer-logo:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  .footer div p {
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -84,7 +84,7 @@ a:hover {
 
 .wrapper {
   position: relative;
-  overflow-y: visible;
+  height: 100vh;
 }
 
 .colorrect {
@@ -266,7 +266,7 @@ a:hover {
 }
 
 .instagram button {
-  margin-bottom: 80px;
+  margin-bottom: 160px;
 }
 
 .instagram .instatext {
