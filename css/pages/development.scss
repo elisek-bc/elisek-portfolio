@@ -5,68 +5,68 @@
 
 .development {
     @extend %boxedcontent;
-};
 
-.item {
-    @extend %text-in;
-    padding: 50px;
-    margin-top: $small;
-    position:relative;
-    max-height: 100%;
-    text-align: center;
-
-    h4{
-        position: relative;
-        padding-bottom: $xxs;
-        border-bottom: 1px solid $darkgrey;
-    }
-
-    .text {
-        margin: $xxs 0;
-    }
-
-    .portfolio-image {
-        background: grey;
-        top: -50px;
-        position: absolute;
-        z-index: 1;
-
-        &.left{
-            left:50px;
-            right: auto;
-        }
-        &.right{
-            left:auto;
-            right: 50px;
-        }
-    }
-
-    .portfolio-text {
-        background: white;
+    .item {
+        @extend %text-in;
         padding: 50px;
-        position: relative;
-        z-index: 2;
-
-        .org {
-            position:absolute;
-            text-align:center;
-            top: -25px;
-            left: 35%;
+        margin-top: $small;
+        position:relative;
+        max-height: 100%;
+        text-align: center;
+    
+        h4{
+            position: relative;
+            padding-bottom: $xxs;
+            border-bottom: 1px solid $darkgrey;
+        }
+    
+        .text {
+            margin: $xxs 0;
+        }
+    
+        .portfolio-image {
+            background: grey;
+            top: -50px;
+            position: absolute;
+            z-index: 1;
+    
+            &.left{
+                left:50px;
+                right: auto;
+            }
+            &.right{
+                left:auto;
+                right: 50px;
+            }
+        }
+    
+        .portfolio-text {
+            background: white;
+            padding: 50px;
+            position: relative;
+            z-index: 2;
+    
+            .org {
+                position:absolute;
+                text-align:center;
+                top: -25px;
+                left: 35%;
+            }
+        }
+    
+        &.front-end{
+            background: $green;
+        }
+    
+        &.back-end {
+            background: $beige;
+            
+            .org {
+                border-color: $beige;
+            }
         }
     }
-
-    &.front-end{
-        background: $green;
-    }
-
-    &.back-end {
-        background: $beige;
-        
-        .org {
-            border-color: $beige;
-        }
-    }
-}
+};
 
 .backend-container {
     margin-bottom: $xsmall;

@@ -33,7 +33,7 @@ body {
   margin: 0;
 }
 
-.org, .main-content-services h3, .navbar .nav-link {
+.org, .main-content-services h3, .design .item-container a, .navbar .nav-link {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -107,7 +107,7 @@ body {
   margin: 0;
 }
 
-.org, .main-content-services h3, .navbar .nav-link {
+.org, .main-content-services h3, .design .item-container a, .navbar .nav-link {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -249,7 +249,7 @@ body {
   margin: 0;
 }
 
-.org, .main-content-services h3, .navbar .nav-link {
+.org, .main-content-services h3, .design .item-container a, .navbar .nav-link {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -300,7 +300,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext, .item {
+.main-content, .instagram .instatext, .development .item {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -309,7 +309,7 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext, .is-visible.item {
+.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -541,7 +541,7 @@ body {
   margin: 0;
 }
 
-.org, .main-content-services h3, .navbar .nav-link {
+.org, .main-content-services h3, .design .item-container a, .navbar .nav-link {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -592,7 +592,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext, .item {
+.main-content, .instagram .instatext, .development .item {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -601,7 +601,7 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext, .is-visible.item {
+.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -700,7 +700,7 @@ body {
   margin: 0;
 }
 
-.org, .main-content-services h3, .navbar .nav-link {
+.org, .main-content-services h3, .design .item-container a, .navbar .nav-link {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -751,7 +751,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext, .item {
+.main-content, .instagram .instatext, .development .item {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -760,12 +760,12 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext, .is-visible.item {
+.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.item {
+.development .item {
   padding: 50px;
   margin-top: 160px;
   position: relative;
@@ -773,56 +773,56 @@ a:hover {
   text-align: center;
 }
 
-.item h4 {
+.development .item h4 {
   position: relative;
   padding-bottom: 40px;
   border-bottom: 1px solid #1D1D1B;
 }
 
-.item .text {
+.development .item .text {
   margin: 40px 0;
 }
 
-.item .portfolio-image {
+.development .item .portfolio-image {
   background: grey;
   top: -50px;
   position: absolute;
   z-index: 1;
 }
 
-.item .portfolio-image.left {
+.development .item .portfolio-image.left {
   left: 50px;
   right: auto;
 }
 
-.item .portfolio-image.right {
+.development .item .portfolio-image.right {
   left: auto;
   right: 50px;
 }
 
-.item .portfolio-text {
+.development .item .portfolio-text {
   background: white;
   padding: 50px;
   position: relative;
   z-index: 2;
 }
 
-.item .portfolio-text .org {
+.development .item .portfolio-text .org {
   position: absolute;
   text-align: center;
   top: -25px;
   left: 35%;
 }
 
-.item.front-end {
+.development .item.front-end {
   background: #6F7762;
 }
 
-.item.back-end {
+.development .item.back-end {
   background: #E2CBB0;
 }
 
-.item.back-end .org {
+.development .item.back-end .org {
   border-color: #E2CBB0;
 }
 
@@ -865,7 +865,7 @@ body {
   margin: 0;
 }
 
-.org, .main-content-services h3, .navbar .nav-link {
+.org, .main-content-services h3, .design .item-container a, .navbar .nav-link {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -916,7 +916,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext, .item {
+.main-content, .instagram .instatext, .development .item {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -925,13 +925,68 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext, .is-visible.item {
+.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
 .design {
   min-height: 100vh;
+}
+
+.design .item .item-container {
+  background: #dbbf9d;
+}
+
+.design .item.logo .item-container {
+  background: #E2CBB0;
+}
+
+.design .item.branding .item-container {
+  background: #e9d7c3;
+}
+
+.design .item.illustration .item-container {
+  background: #f0e4d5;
+}
+
+.design .item.photography .item-container {
+  background: #f7f0e8;
+}
+
+.design .item.web .item-container {
+  background: #fdfcfb;
+}
+
+.design .item-container {
+  height: 360px;
+  width: 100%;
+  position: relative;
+}
+
+.design .item-container a {
+  height: 100%;
+}
+
+.design .item-container a .item-title {
+  background: #E2CBB0;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  height: 100%;
+}
+
+.design .item-container a .item-title:hover {
+  opacity: 1;
+}
+
+.design .item-container a h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.design .item-container a p {
+  font-size: 0.75rem;
 }
 
 html, .wrapper, .menu {

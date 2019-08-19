@@ -6,4 +6,66 @@
 .design {
     @extend %boxedcontent;
     min-height: 100vh;
+
+    .item {
+        .item-container {
+            background: darken($beige, 5%);
+        }
+
+        &.logo {
+            .item-container {
+                background: $beige;
+            }
+        }
+        &.branding {
+            .item-container {
+                background: lighten($beige,5%);
+            }   
+        }
+        &.illustration {
+            .item-container {
+                background:lighten($beige,10%);
+            }   
+        }
+        &.photography {
+            .item-container {
+                background: lighten($beige,15%);
+            } 
+        }
+        &.web {
+            .item-container {
+                background: lighten($beige,20%);
+            }  
+        }
+    }
+    
+    .item-container {
+        height: 360px;
+        width: 100%;
+        position: relative;
+
+        a {
+            @extend %navfont;
+            height: 100%;
+
+            .item-title {
+                background: $beige;
+                opacity: 0;
+                transition: opacity .5s;
+                height: 100%;
+
+                &:hover {
+                    opacity:1;
+                    }
+            }
+
+            h3 {
+                font-size: rem(16);
+                font-weight: $semibold;
+            }
+            p {
+                font-size: rem(12);
+            }
+        }
+    }
 }

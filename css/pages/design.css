@@ -33,7 +33,7 @@ body {
   margin: 0;
 }
 
-.org {
+.org, .design .item-container a {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -77,5 +77,60 @@ a:hover {
 
 .design {
   min-height: 100vh;
+}
+
+.design .item .item-container {
+  background: #dbbf9d;
+}
+
+.design .item.logo .item-container {
+  background: #E2CBB0;
+}
+
+.design .item.branding .item-container {
+  background: #e9d7c3;
+}
+
+.design .item.illustration .item-container {
+  background: #f0e4d5;
+}
+
+.design .item.photography .item-container {
+  background: #f7f0e8;
+}
+
+.design .item.web .item-container {
+  background: #fdfcfb;
+}
+
+.design .item-container {
+  height: 360px;
+  width: 100%;
+  position: relative;
+}
+
+.design .item-container a {
+  height: 100%;
+}
+
+.design .item-container a .item-title {
+  background: #E2CBB0;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  height: 100%;
+}
+
+.design .item-container a .item-title:hover {
+  opacity: 1;
+}
+
+.design .item-container a h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.design .item-container a p {
+  font-size: 0.75rem;
 }
 /*# sourceMappingURL=design.css.map */
