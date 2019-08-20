@@ -295,12 +295,12 @@ a:hover {
   border: 5px solid #6F7762;
 }
 
-.intro, .banner .bannercontent, .instagram, .main-content-services, .development, .design {
+.intro, .banner .bannercontent, .instagram, .main-content-services, .development, .design, .article-detail {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext, .development .item {
+.main-content, .instagram .instatext, .development .item, .design .item, .article-detail .article-text {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -309,7 +309,7 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item {
+.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-detail .is-visible.article-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -587,12 +587,12 @@ a:hover {
   border: 5px solid #6F7762;
 }
 
-.intro, .banner .bannercontent, .instagram, .main-content-services, .development, .design {
+.intro, .banner .bannercontent, .instagram, .main-content-services, .development, .design, .article-detail {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext, .development .item {
+.main-content, .instagram .instatext, .development .item, .design .item, .article-detail .article-text {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -601,7 +601,7 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item {
+.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-detail .is-visible.article-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -746,12 +746,12 @@ a:hover {
   border: 5px solid #6F7762;
 }
 
-.intro, .banner .bannercontent, .instagram, .main-content-services, .development, .design {
+.intro, .banner .bannercontent, .instagram, .main-content-services, .development, .design, .article-detail {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext, .development .item {
+.main-content, .instagram .instatext, .development .item, .design .item, .article-detail .article-text {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -760,7 +760,7 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item {
+.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-detail .is-visible.article-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -784,10 +784,18 @@ a:hover {
 }
 
 .development .item .portfolio-image {
-  background: grey;
+  background-size: cover !important;
   top: -50px;
   position: absolute;
   z-index: 1;
+}
+
+.development .item .portfolio-image#kattenhotel {
+  background: url(../../thumbs/kattenhotel-voorbeeld.jpg) bottom center no-repeat;
+}
+
+.development .item .portfolio-image#restaurant {
+  background: url(../../thumbs/mario&luigi-voorbeeld.jpg) top center no-repeat;
 }
 
 .development .item .portfolio-image.left {
@@ -911,12 +919,12 @@ a:hover {
   border: 5px solid #6F7762;
 }
 
-.intro, .banner .bannercontent, .instagram, .main-content-services, .development, .design {
+.intro, .banner .bannercontent, .instagram, .main-content-services, .development, .design, .article-detail {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext, .development .item {
+.main-content, .instagram .instatext, .development .item, .design .item, .article-detail .article-text {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -925,7 +933,7 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item {
+.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-detail .is-visible.article-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -996,6 +1004,160 @@ a:hover {
 .design .item .item-container:hover .item-title {
   -webkit-animation: hoverbox .5s forwards;
           animation: hoverbox .5s forwards;
+}
+
+@media screen and (max-width: 720px) {
+  .design .item .item-container {
+    width: 360px;
+    margin: 0 auto;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #1D1D1B;
+}
+
+.main1 {
+  font-size: 3.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.main2, .image .content-wrap .content-body h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.special {
+  font-family: "Special Elite", cursive;
+  font-size: 1.25rem;
+  text-transform: lowercase;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.org, .main-content-services h3, .design .item .item-container a, .navbar .nav-link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom: 0;
+}
+
+.invert, .org, .navbar .nav-link {
+  color: white;
+}
+
+.text {
+  font-size: 0.9375rem;
+  line-height: 1.625rem;
+}
+
+.image a {
+  -webkit-transition: font-size .5s;
+  transition: font-size .5s;
+}
+
+.image a:hover {
+  font-size: 1.3125rem;
+}
+
+a {
+  color: #1D1D1B;
+}
+
+a:hover {
+  color: #1D1D1B;
+  text-decoration: none;
+}
+
+.button {
+  font-size: 1rem;
+}
+
+.org {
+  padding: 10px;
+  background: #1D1D1B;
+  text-align: center;
+  width: 30%;
+  border: 5px solid #6F7762;
+}
+
+.intro, .banner .bannercontent, .instagram, .main-content-services, .development, .design, .article-detail {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.main-content, .instagram .instatext, .development .item, .design .item, .article-detail .article-text {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: -webkit-transform 1s 0.25s ease;
+  transition: -webkit-transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
+}
+
+.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-detail .is-visible.article-text {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.article-detail {
+  margin-top: 80px;
+  margin-bottom: 160px;
+}
+
+.article-detail .article-image img {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 0 15px #9f9f98;
+          box-shadow: 0 0 15px #9f9f98;
+}
+
+.article-detail .article-text h1 {
+  margin-bottom: 10px;
+}
+
+.article-detail .article-text h2 {
+  margin-bottom: 50px;
+}
+
+.article-detail .article-text .styling-info {
+  margin-top: 80px;
+}
+
+.article-detail .article-text .styling-info .substyling h3 {
+  border-bottom: 1px solid #1D1D1B;
+}
+
+.article-detail .article-text .styling-info .substyling .swatches {
+  margin: 40px 0;
+}
+
+.article-detail .article-text .styling-info .substyling .swatches .swatch {
+  height: 80px;
+  width: 80px;
+  margin-right: 15px;
+  font-variant-numeric: lining-nums;
+}
+
+.article-detail .article-text .styling-info .substyling .swatches .swatch#hqc-1 {
+  background: #C29D6B;
+}
+
+.article-detail .article-text .styling-info .substyling .swatches .swatch#hqc-2 {
+  background: #3C3C3C;
 }
 
 html, .wrapper, .menu {

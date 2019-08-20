@@ -75,6 +75,20 @@ a:hover {
   margin: 0 auto;
 }
 
+.design .item {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: -webkit-transform 1s 0.25s ease;
+  transition: -webkit-transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
+}
+
+.design .is-visible.item {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .design {
   margin-bottom: 160px;
 }
@@ -141,5 +155,12 @@ a:hover {
 .design .item .item-container:hover .item-title {
   -webkit-animation: hoverbox .5s forwards;
           animation: hoverbox .5s forwards;
+}
+
+@media screen and (max-width: 720px) {
+  .design .item .item-container {
+    width: 360px;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=design.css.map */

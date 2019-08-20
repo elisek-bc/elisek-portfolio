@@ -25,10 +25,17 @@
         }
     
         .portfolio-image {
-            background: grey;
+            background-size: cover !important;
             top: -50px;
             position: absolute;
             z-index: 1;
+
+            &#kattenhotel{
+                background: url(../../thumbs/kattenhotel-voorbeeld.jpg) bottom center no-repeat;
+            }
+            &#restaurant{
+                background: url(../../thumbs/mario&luigi-voorbeeld.jpg) top center no-repeat;
+            }
     
             &.left{
                 left:50px;

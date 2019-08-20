@@ -1,0 +1,59 @@
+@import "../helpers/reset.scss";
+@import "../helpers/colors.scss";
+@import "../helpers/fonts.scss";
+@import "../helpers/sizing.scss";
+
+.article-detail {
+    @extend %boxedcontent;
+    margin-top: $xsmall;
+    margin-bottom: $small;
+
+    .article-image {
+        img {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 15px lighten($darkgrey, 50%);
+        }
+    }
+
+    .article-text {
+        @extend %text-in;
+
+        h1 {
+            margin-bottom: 10px;
+        }
+    
+        h2 {
+            margin-bottom: 50px;
+        }
+
+        .styling-info {
+            margin-top: $xsmall;
+            
+            .substyling {
+
+                h3 {
+                    border-bottom: 1px solid $darkgrey;
+                }
+
+                .swatches {
+                    margin: $xxs 0;
+
+                    .swatch {
+                        height: $xsmall;
+                        width: $xsmall;
+                        margin-right: 15px;
+                        font-variant-numeric: lining-nums;
+    
+                        &#hqc-1 {
+                            background: #C29D6B;
+                        }
+                        &#hqc-2 {
+                            background: #3C3C3C;
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}

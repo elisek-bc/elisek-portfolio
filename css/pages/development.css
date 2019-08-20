@@ -108,10 +108,18 @@ a:hover {
 }
 
 .development .item .portfolio-image {
-  background: grey;
+  background-size: cover !important;
   top: -50px;
   position: absolute;
   z-index: 1;
+}
+
+.development .item .portfolio-image#kattenhotel {
+  background: url(../../thumbs/kattenhotel-voorbeeld.jpg) bottom center no-repeat;
+}
+
+.development .item .portfolio-image#restaurant {
+  background: url(../../thumbs/mario&luigi-voorbeeld.jpg) top center no-repeat;
 }
 
 .development .item .portfolio-image.left {

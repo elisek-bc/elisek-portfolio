@@ -9,6 +9,7 @@
 
     .item {
         padding: 20px;
+        @extend %text-in;
 
         .item-container {
             background: lighten($green,50%);
@@ -55,6 +56,11 @@
                 .item-title {
                     animation: hoverbox .5s forwards;
                 }
+            }
+
+            @media screen and (max-width: 720px) {
+                width: 360px;
+                margin: 0 auto;
             }
         }
     }
