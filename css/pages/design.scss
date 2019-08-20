@@ -5,66 +5,56 @@
 
 .design {
     @extend %boxedcontent;
-    min-height: 100vh;
+    margin-bottom: $small;
 
     .item {
+        padding: 20px;
+
         .item-container {
-            background: darken($beige, 5%);
-        }
-
-        &.logo {
-            .item-container {
-                background: $beige;
-            }
-        }
-        &.branding {
-            .item-container {
-                background: lighten($beige,5%);
-            }   
-        }
-        &.illustration {
-            .item-container {
-                background:lighten($beige,10%);
-            }   
-        }
-        &.photography {
-            .item-container {
-                background: lighten($beige,15%);
-            } 
-        }
-        &.web {
-            .item-container {
-                background: lighten($beige,20%);
-            }  
-        }
-    }
+            background: lighten($green,50%);
+            height: 360px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
     
-    .item-container {
-        height: 360px;
-        width: 100%;
-        position: relative;
-
-        a {
-            @extend %navfont;
-            height: 100%;
-
-            .item-title {
-                background: $beige;
-                opacity: 0;
-                transition: opacity .5s;
+            img {
+                position: absolute;
+                left:50%;
+                margin-left:-180px;
+                z-index: 0;
+            }
+    
+            a {
+                @extend %navfont;
                 height: 100%;
+    
+                .item-title {
+                    background: rgba(255, 255, 255, 0.9);
+                    opacity: 0;
+                    transition: opacity .5s;
+                    height: 100%;
+                    z-index: 1;
+                }
+    
+                h3 {
+                    font-size: rem(16);
+                    font-weight: $semibold;
+                }
 
-                &:hover {
-                    opacity:1;
-                    }
+                p {
+                    font-size: rem(12);
+                }
             }
 
-            h3 {
-                font-size: rem(16);
-                font-weight: $semibold;
+            @keyframes hoverbox {
+                from {opacity: 0}
+                to {opacity:1}
             }
-            p {
-                font-size: rem(12);
+
+            &:hover {
+                .item-title {
+                    animation: hoverbox .5s forwards;
+                }
             }
         }
     }
