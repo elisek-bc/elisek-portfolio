@@ -3,57 +3,59 @@
 @import "../helpers/fonts.scss";
 @import "../helpers/sizing.scss";
 
-.article-detail {
-    @extend %boxedcontent;
-    margin-top: $xsmall;
-    margin-bottom: $small;
+.article-start {
+    position:relative;
+    height: 100vh;
 
-    .article-image {
-        img {
-            width: 100%;
+    .colorrect-article {
+        position: absolute;
+        background:$green;
+        width: 100vw;
+        z-index: -1;
+        @include scroll-animation(.5s,0vh,70vh,height);
+
+        .row {
+            padding-top: $xsmall;
+            position: relative;
             height: 100%;
-            box-shadow: 0 0 15px lighten($darkgrey, 50%);
-        }
-    }
 
-    .article-text {
-        @extend %text-in;
+            .article-title{
+                height: 100%;
 
-        h1 {
-            margin-bottom: 10px;
-        }
-    
-        h2 {
-            margin-bottom: 50px;
-        }
-
-        .styling-info {
-            margin-top: $xsmall;
-            
-            .substyling {
-
-                h3 {
-                    border-bottom: 1px solid $darkgrey;
+                h1 {
+                    margin-bottom: 10px;
+                }
+                
+                h2 {
+                    margin-bottom: 50px;
                 }
 
-                .swatches {
-                    margin: $xxs 0;
-
-                    .swatch {
-                        height: $xsmall;
-                        width: $xsmall;
-                        margin-right: 15px;
-                        font-variant-numeric: lining-nums;
-    
-                        &#hqc-1 {
-                            background: #C29D6B;
-                        }
-                        &#hqc-2 {
-                            background: #3C3C3C;
-                        }
-                    }
+                img {
+                    position: absolute;
+                    bottom: -$xsmall;
+                    height: inherit;
+                    left: 50%;
+                    transform: translateX(-50%);
                 }
+                
             }
         }
-    }  
+    }
+}
+
+.article-content {
+    @extend %boxedcontent;
+
+    .row {
+        margin-bottom: $xsmall;
+
+        .text-intro {
+            @extend %text-in;
+            margin-bottom: $xxs;
+        }
+
+        img {
+            width:30%;
+        }
+    }
 }
