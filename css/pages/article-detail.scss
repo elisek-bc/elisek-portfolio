@@ -12,6 +12,7 @@
         background:$green;
         width: 100vw;
         z-index: -1;
+        box-shadow: inset 0 -15px 20px -15px lighten($darkgrey, 20%);
         @include scroll-animation(.5s,0vh,70vh,height);
 
         .row {
@@ -48,14 +49,87 @@
 
     .row {
         margin-bottom: $xsmall;
+    }
 
-        .text-intro {
-            @extend %text-in;
-            margin-bottom: $xxs;
+    .text-intro {
+        @extend %text-in;
+        margin-bottom: $xxs;
+    }
+
+    img {
+        width: 70%;
+        @media screen and (min-width: 720px){
+            width:30%;
         }
+    }
+
+
+    .article-box {
+        position:relative;
+        @include scroll-animation(1s, 0, 1, opacity);
 
         img {
-            width:30%;
+            height: 100%;
+            width: 100%;
+        }
+
+        .box-column {
+            position:relative;
+        }
+
+        .title {
+            position: absolute;
+            margin: 0;
+        }
+
+        &.styling {
+            .title {
+                transform: rotate(90deg);
+                right: -65px;
+                top:100px;
+
+                @media screen and (max-width: 720px){
+                    right: -45px;
+                }
+            }
+    
+            img {
+                border-right: 1px solid $darkgrey;
+            }
+        }
+
+        &.web-example {
+            .box-column {
+
+                &::before {
+                    content:"";
+                    height: 1px;
+                    background: $darkgrey;
+                    width: 50%;
+                    position: absolute;
+                    display:block;
+                    top: 50px;
+                }
+    
+                .title {
+                    left:-5px;
+                    top: 20px;
+                    @include scroll-animation(.5s, translateX(-100px),translateX(0px),transform);
+                }
+
+            }
+        }
+
+        &.web-video {
+            .box-column{
+                box-shadow: 0 0 15px lighten($darkgrey,50%);
+                height: 75vh;
+                overflow-y: scroll;
+        
+                img {
+                    height: auto;
+                }
+            }
         }
     }
 }

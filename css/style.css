@@ -300,7 +300,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext, .development .item, .design .item, .article-content .article-intro .text-intro {
+.main-content, .instagram .instatext, .development .item, .design .item, .article-content .text-intro {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -309,7 +309,7 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-content .article-intro .is-visible.text-intro {
+.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-content .is-visible.text-intro {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -592,7 +592,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext, .development .item, .design .item, .article-content .article-intro .text-intro {
+.main-content, .instagram .instatext, .development .item, .design .item, .article-content .text-intro {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -601,7 +601,7 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-content .article-intro .is-visible.text-intro {
+.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-content .is-visible.text-intro {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -751,7 +751,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext, .development .item, .design .item, .article-content .article-intro .text-intro {
+.main-content, .instagram .instatext, .development .item, .design .item, .article-content .text-intro {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -760,7 +760,7 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-content .article-intro .is-visible.text-intro {
+.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-content .is-visible.text-intro {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -924,7 +924,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext, .development .item, .design .item, .article-content .article-intro .text-intro {
+.main-content, .instagram .instatext, .development .item, .design .item, .article-content .text-intro {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -933,7 +933,7 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-content .article-intro .is-visible.text-intro {
+.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-content .is-visible.text-intro {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -1099,7 +1099,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.main-content, .instagram .instatext, .development .item, .design .item, .article-content .article-intro .text-intro {
+.main-content, .instagram .instatext, .development .item, .design .item, .article-content .text-intro {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 1s 0.25s ease;
@@ -1108,7 +1108,7 @@ a:hover {
   transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
 }
 
-.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-content .article-intro .is-visible.text-intro {
+.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-content .is-visible.text-intro {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -1123,6 +1123,8 @@ a:hover {
   background: #6F7762;
   width: 100vw;
   z-index: -1;
+  -webkit-box-shadow: inset 0 -15px 20px -15px #52524c;
+          box-shadow: inset 0 -15px 20px -15px #52524c;
   height: 0vh;
   -webkit-transition: height 0.5s 0.25s ease;
   transition: height 0.5s 0.25s ease;
@@ -1159,16 +1161,101 @@ a:hover {
           transform: translateX(-50%);
 }
 
-.article-content .article-intro {
+.article-content .row {
   margin-bottom: 80px;
 }
 
-.article-content .article-intro .text-intro {
+.article-content .text-intro {
   margin-bottom: 40px;
 }
 
-.article-content .article-intro img {
-  width: 30%;
+.article-content img {
+  width: 70%;
+}
+
+@media screen and (min-width: 720px) {
+  .article-content img {
+    width: 30%;
+  }
+}
+
+.article-content .article-box {
+  position: relative;
+  opacity: 0;
+  -webkit-transition: opacity 1s 0.25s ease;
+  transition: opacity 1s 0.25s ease;
+}
+
+.article-content .article-box.is-visible {
+  opacity: 1;
+}
+
+.article-content .article-box img {
+  height: 100%;
+  width: 100%;
+}
+
+.article-content .article-box .box-column {
+  position: relative;
+}
+
+.article-content .article-box .title {
+  position: absolute;
+  margin: 0;
+}
+
+.article-content .article-box.styling .title {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: -65px;
+  top: 100px;
+}
+
+@media screen and (max-width: 720px) {
+  .article-content .article-box.styling .title {
+    right: -45px;
+  }
+}
+
+.article-content .article-box.styling img {
+  border-right: 1px solid #1D1D1B;
+}
+
+.article-content .article-box.web-example .box-column::before {
+  content: "";
+  height: 1px;
+  background: #1D1D1B;
+  width: 50%;
+  position: absolute;
+  display: block;
+  top: 50px;
+}
+
+.article-content .article-box.web-example .box-column .title {
+  left: -5px;
+  top: 20px;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  -webkit-transition: -webkit-transform 0.5s 0.25s ease;
+  transition: -webkit-transform 0.5s 0.25s ease;
+  transition: transform 0.5s 0.25s ease;
+  transition: transform 0.5s 0.25s ease, -webkit-transform 0.5s 0.25s ease;
+}
+
+.article-content .article-box.web-example .box-column .title.is-visible {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.article-content .article-box.web-video .box-column {
+  -webkit-box-shadow: 0 0 15px #9f9f98;
+          box-shadow: 0 0 15px #9f9f98;
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+.article-content .article-box.web-video .box-column img {
+  height: auto;
 }
 
 html, .wrapper, .menu {
