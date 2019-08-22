@@ -63,7 +63,6 @@
         }
     }
 
-
     .article-box {
         position:relative;
         @include scroll-animation(1s, 0, 1, opacity);
@@ -98,7 +97,12 @@
             }
         }
 
-        &.web-example {
+        &.case-content {
+
+            @media screen and (max-width: 960px) {
+                margin-bottom: 0;
+            }
+
             .box-column {
 
                 &::before {
@@ -117,6 +121,59 @@
                     @include scroll-animation(.5s, translateX(-100px),translateX(0px),transform);
                 }
 
+                &.desktop {
+                    @media screen and (max-width: 960px) {
+                        display:none;
+                    }
+
+                    .photos {
+                        position: absolute;
+                        z-index: 1;
+                        top: 50px;
+                        width: 100%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        
+    
+                        .block-photo {
+                            height: 300px;
+                            width: 300px;
+                            border: 5px solid white;
+                            box-shadow: 0 0 15px lighten($darkgrey,50%);
+                        }
+    
+                        @media screen and (max-width: 720px){
+                            position: relative;
+                            top: 0;
+                            transform: translateY(0%);
+                        }
+                    }
+
+                    .article-button {
+                        position: absolute;
+                        right: $small;
+                        bottom: $small;
+                        z-index: 2;
+                    }
+                }
+                
+                &.mobile {
+                    @media screen and (min-width: 961px) {
+                        display:none;
+                    }
+
+                    .block-photo {
+                        height: 50%;
+                        width: 50%;
+                        border: 5px solid white;
+                        box-shadow: 0 0 15px lighten($darkgrey,50%);
+                        margin-left:25%;
+                    }
+
+                    .article-button {
+                        margin-top: $xxs;
+                    }
+                }
             }
         }
 

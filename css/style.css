@@ -430,42 +430,6 @@ a:hover {
           transform: translate(96px, 10px);
 }
 
-.banner .bannercontent .linkbox {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.banner .bannercontent .linkbox .arrow {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.banner .bannercontent .linkbox .arrow::before {
-  content: '';
-  height: 1px;
-  width: 120px;
-  float: left;
-  background-color: #1D1D1B;
-  display: block;
-  position: relative;
-  top: 4px;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.banner .bannercontent .linkbox .arrow::after {
-  content: '';
-  float: left;
-  border-left: 5px solid #1D1D1B;
-  border-right: 5px solid transparent;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-}
-
-.banner .bannercontent .linkbox:hover > .arrow::before {
-  width: 40px;
-}
-
 .instagram .mockup {
   width: 100%;
 }
@@ -1221,7 +1185,13 @@ a:hover {
   border-right: 1px solid #1D1D1B;
 }
 
-.article-content .article-box.web-example .box-column::before {
+@media screen and (max-width: 960px) {
+  .article-content .article-box.case-content {
+    margin-bottom: 0;
+  }
+}
+
+.article-content .article-box.case-content .box-column::before {
   content: "";
   height: 1px;
   background: #1D1D1B;
@@ -1231,7 +1201,7 @@ a:hover {
   top: 50px;
 }
 
-.article-content .article-box.web-example .box-column .title {
+.article-content .article-box.case-content .box-column .title {
   left: -5px;
   top: 20px;
   -webkit-transform: translateX(-100px);
@@ -1242,9 +1212,68 @@ a:hover {
   transition: transform 0.5s 0.25s ease, -webkit-transform 0.5s 0.25s ease;
 }
 
-.article-content .article-box.web-example .box-column .title.is-visible {
+.article-content .article-box.case-content .box-column .title.is-visible {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
+}
+
+@media screen and (max-width: 960px) {
+  .article-content .article-box.case-content .box-column.desktop {
+    display: none;
+  }
+}
+
+.article-content .article-box.case-content .box-column.desktop .photos {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.article-content .article-box.case-content .box-column.desktop .photos .block-photo {
+  height: 300px;
+  width: 300px;
+  border: 5px solid white;
+  -webkit-box-shadow: 0 0 15px #9f9f98;
+          box-shadow: 0 0 15px #9f9f98;
+}
+
+@media screen and (max-width: 720px) {
+  .article-content .article-box.case-content .box-column.desktop .photos {
+    position: relative;
+    top: 0;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+.article-content .article-box.case-content .box-column.desktop .article-button {
+  position: absolute;
+  right: 160px;
+  bottom: 160px;
+  z-index: 2;
+}
+
+@media screen and (min-width: 961px) {
+  .article-content .article-box.case-content .box-column.mobile {
+    display: none;
+  }
+}
+
+.article-content .article-box.case-content .box-column.mobile .block-photo {
+  height: 50%;
+  width: 50%;
+  border: 5px solid white;
+  -webkit-box-shadow: 0 0 15px #9f9f98;
+          box-shadow: 0 0 15px #9f9f98;
+  margin-left: 25%;
+}
+
+.article-content .article-box.case-content .box-column.mobile .article-button {
+  margin-top: 40px;
 }
 
 .article-content .article-box.web-video .box-column {
@@ -1511,6 +1540,42 @@ button:hover:after {
 
 .filter button.active {
   font-weight: 700;
+}
+
+.linkbox {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.linkbox .arrow {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.linkbox .arrow::before {
+  content: '';
+  height: 1px;
+  width: 120px;
+  float: left;
+  background-color: #1D1D1B;
+  display: block;
+  position: relative;
+  top: 4px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.linkbox .arrow::after {
+  content: '';
+  float: left;
+  border-left: 5px solid #1D1D1B;
+  border-right: 5px solid transparent;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.linkbox:hover > .arrow::before {
+  width: 40px;
 }
 
 .footer {

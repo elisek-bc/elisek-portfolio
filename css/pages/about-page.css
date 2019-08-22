@@ -198,42 +198,6 @@ a:hover {
           transform: translate(96px, 10px);
 }
 
-.banner .bannercontent .linkbox {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.banner .bannercontent .linkbox .arrow {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.banner .bannercontent .linkbox .arrow::before {
-  content: '';
-  height: 1px;
-  width: 120px;
-  float: left;
-  background-color: #1D1D1B;
-  display: block;
-  position: relative;
-  top: 4px;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.banner .bannercontent .linkbox .arrow::after {
-  content: '';
-  float: left;
-  border-left: 5px solid #1D1D1B;
-  border-right: 5px solid transparent;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-}
-
-.banner .bannercontent .linkbox:hover > .arrow::before {
-  width: 40px;
-}
-
 .instagram .mockup {
   width: 100%;
 }
