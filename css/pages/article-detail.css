@@ -197,12 +197,6 @@ a:hover {
   border-right: 1px solid #1D1D1B;
 }
 
-@media screen and (max-width: 960px) {
-  .article-content .article-box.case-content {
-    margin-bottom: 0;
-  }
-}
-
 .article-content .article-box.case-content .box-column::before {
   content: "";
   height: 1px;

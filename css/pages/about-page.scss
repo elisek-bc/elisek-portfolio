@@ -11,14 +11,14 @@
     position: absolute;
     background:$green;
     width: 100vw;
-    height: 30%;
+    height: 50%;
     z-index: -1;
 }
 
 .intro {
     @extend %boxedcontent;
     position: relative;
-    margin-bottom: 75px !important;
+    margin-bottom: $xsmall !important;
 
     .row {
         position: relative;
@@ -37,7 +37,7 @@
     height: $medium;
     background: url("../../ElisePhotoCV.jpg") center center no-repeat;
     background-size: cover;
-    margin-top: 40px;
+    margin-top: $small;
     @include scroll-animation(.5s,translateY(-20px),translateY(0),transform);
 }
 
