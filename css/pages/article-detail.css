@@ -107,11 +107,11 @@ a:hover {
 }
 
 .article-start .colorrect-article.is-visible {
-  height: 70vh;
+  height: 80vh;
 }
 
 .article-start .colorrect-article .row {
-  padding-top: 80px;
+  padding-top: 160px;
   position: relative;
   height: 100%;
 }

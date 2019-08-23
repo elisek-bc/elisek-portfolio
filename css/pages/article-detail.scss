@@ -13,10 +13,10 @@
         width: 100vw;
         z-index: -1;
         box-shadow: inset 0 -15px 20px -15px lighten($darkgrey, 20%);
-        @include scroll-animation(.5s,0vh,70vh,height);
+        @include scroll-animation(.5s,0vh,80vh,height);
 
         .row {
-            padding-top: $xsmall;
+            padding-top: $small;
             position: relative;
             height: 100%;
 
