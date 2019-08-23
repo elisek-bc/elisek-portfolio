@@ -197,6 +197,30 @@ a:hover {
   border-right: 1px solid #1D1D1B;
 }
 
+.article-content .article-box.onlythis:before {
+  content: "";
+  height: 1px;
+  width: 66.6%;
+  background: #1D1D1B;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.article-content .article-box.onlythis .title {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-top: 50px;
+  top: -80px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+}
+
 .article-content .article-box.case-content .box-column::before {
   content: "";
   height: 1px;
