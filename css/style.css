@@ -1082,6 +1082,10 @@ a:hover {
   height: 100vh;
 }
 
+.article-start.small {
+  height: 60vh;
+}
+
 .article-start .colorrect-article {
   position: absolute;
   background: #6F7762;
@@ -1096,6 +1100,16 @@ a:hover {
 
 .article-start .colorrect-article.is-visible {
   height: 80vh;
+}
+
+.article-start .colorrect-article.small {
+  height: 0vh;
+  -webkit-transition: height 0.5s 0.25s ease;
+  transition: height 0.5s 0.25s ease;
+}
+
+.article-start .colorrect-article.small.is-visible {
+  height: 50vh;
 }
 
 .article-start .colorrect-article .row {
@@ -1303,6 +1317,49 @@ a:hover {
 
 .article-content .article-box.web-video .box-column img {
   height: auto;
+}
+
+.article-content .article-box.web-video .box-column video {
+  height: auto;
+  width: 100%;
+}
+
+.article-content .article-box.video .box-column {
+  overflow-y: visible;
+  background: #1D1D1B;
+}
+
+.article-content .article-box.video .box-column video {
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: 0 0 15px #9f9f98;
+          box-shadow: 0 0 15px #9f9f98;
+}
+
+.article-content .article-box.image-grid img {
+  height: 300px;
+  width: 300px;
+  border: 5px solid #eceeea;
+  margin: 0 20px 40px 20px;
+}
+
+.square-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.square-container .background-square {
+  border: 5px solid #eceeea;
+  z-index: -1;
+  height: 50%;
+  width: 50%;
+}
+
+@media screens and (max-width: 720px) {
+  .square-container {
+    display: none;
+  }
 }
 
 html, .wrapper, .menu {

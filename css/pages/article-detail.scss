@@ -7,6 +7,10 @@
     position:relative;
     height: 100vh;
 
+    &.small {
+        height: 60vh;
+    }
+
     .colorrect-article {
         position: absolute;
         background:$green;
@@ -14,6 +18,10 @@
         z-index: -1;
         box-shadow: inset 0 -15px 20px -15px lighten($darkgrey, 20%);
         @include scroll-animation(.5s,0vh,80vh,height);
+
+        &.small{
+            @include scroll-animation(.5s,0vh,50vh,height);
+        }
 
         .row {
             padding-top: $small;
@@ -205,7 +213,47 @@
                 img {
                     height: auto;
                 }
+
+                video {
+                    height: auto;
+                    width: 100%;
+                }
             }
         }
+
+        &.video {
+            .box-column{
+                overflow-y: visible;
+                background: $darkgrey;
+
+                video {
+                    height: 100%;
+                    width: 100%;
+                    box-shadow: 0 0 15px lighten($darkgrey,50%);
+                }
+            }
+        }
+
+        &.image-grid {
+            img {
+                height: 300px;
+                width: 300px;
+                border: 5px solid lighten($green, 50%);
+                margin: 0 $xxs/2 $xxs $xxs/2;
+            }
+        }
+    }
+}
+
+.square-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    .background-square {
+        border: 5px solid lighten($green, 50%);
+        z-index: -1;
+        height: 50%;
+        width:50%;
     }
 }
