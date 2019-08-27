@@ -291,7 +291,7 @@ a:hover {
 .image .content-wrap {
   height: 85vh;
   width: 100%;
-  background: url(../../Test-Portfolio-2563.jpg) center 80% no-repeat;
+  background: url(../../Test-Portfolio-2563.jpg) center 85% no-repeat;
   background-size: contain;
   margin: 0;
 }
@@ -1749,14 +1749,17 @@ button:hover:after {
 .contact {
   padding-top: 20px;
   position: fixed;
-  bottom: 0;
+  bottom: -90px;
   background: #E2CBB0;
   width: 100vw;
   -webkit-filter: drop-shadow(0px 5px 15px #5f5f58);
           filter: drop-shadow(0px 5px 15px #5f5f58);
+  -webkit-transition: bottom .5s ease;
+  transition: bottom .5s ease;
 }
 
 .contact .imgcontent {
+  display: block;
   width: 100%;
 }
 
@@ -1766,21 +1769,20 @@ button:hover:after {
 
 .contact h3 {
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .contact ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  text-align: center;
 }
 
-.contact ul li {
-  margin: 0 10px;
-}
-
-.contact ul li a:hover {
+.contact ul a:hover {
   text-decoration: underline;
+}
+
+.contact:hover {
+  bottom: 0;
 }
 
 @media screen and (min-width: 720px) {
@@ -1806,6 +1808,9 @@ button:hover:after {
   }
   .contact .imgwrapper .imgcontent {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     z-index: 3;
     height: 90%;
     max-width: 95%;
@@ -1823,6 +1828,7 @@ button:hover:after {
   .contact .imgwrapper .imgcontent h3 {
     -webkit-transform: rotate(90deg) translateY(-15px);
             transform: rotate(90deg) translateY(-15px);
+    margin-bottom: 0px;
   }
   .contact .imgwrapper ul {
     display: block;
@@ -1851,6 +1857,24 @@ button:hover:after {
   top: 50%;
   background: #1D1D1B;
   z-index: -1;
+}
+
+@media screen and (max-width: 720px) {
+  .filter .horizontal-line {
+    display: none;
+  }
+  .filter .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .filter .buttons .button {
+    margin: 10px 0;
+  }
 }
 
 .filter button {

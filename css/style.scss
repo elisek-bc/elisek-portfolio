@@ -232,12 +232,14 @@ button {
 .contact {
     padding-top: 20px;
     position: fixed;
-    bottom: 0;
+    bottom: -90px;
     background: $beige;
     width: 100vw;
     filter: drop-shadow(0px 5px 15px lighten($darkgrey, 25%));
+    transition: bottom .5s ease;
 
     .imgcontent{
+        display: block;
         width: 100%;
     }
 
@@ -247,22 +249,24 @@ button {
 
     h3 {
         text-align: center;
+        margin-bottom: 15px;
     }
 
     ul {
         list-style: none;
-        display: flex;
+        text-align: center;
 
-        li {
-            margin: 0 10px;
-
-            a{
+            a {
                 &:hover {
                     text-decoration: underline;
                 }
             }
-        }   
+    } 
+    
+    &:hover {
+        bottom: 0;
     }
+
 
     // MEDIUM SIZE AND UP
     @media screen and (min-width: 720px) {
@@ -286,6 +290,7 @@ button {
     
             .imgcontent {
                 position: absolute;
+                display: flex;
                 z-index: 3;
                 height: 90%;
                 max-width: 95%;
@@ -303,6 +308,7 @@ button {
     
                 h3 {
                     transform: rotate(90deg) translateY(-15px);
+                    margin-bottom: 0px;
                     }
                 }
 
@@ -331,7 +337,7 @@ button {
 
 .filter {
     position: relative;
-
+        
     .horizontal-line {
         height: 1px;
         width: 100%;
@@ -339,6 +345,22 @@ button {
         top:50%;
         background: $darkgrey;
         z-index: -1;
+    }
+
+    @media screen and (max-width: 720px) {
+        .horizontal-line {
+            display: none;
+        }
+
+        .buttons {
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .button {
+                margin: 10px 0;
+            }
+        }
     }
 
     button {
