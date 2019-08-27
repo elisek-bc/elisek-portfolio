@@ -18,7 +18,7 @@ body {
   margin-bottom: 0;
 }
 
-.main2, .image .content-wrap .content-body h2 {
+.main2, .slider .content-wrap .content-body h2 {
   font-size: 2.25rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -49,12 +49,12 @@ body {
   line-height: 1.625rem;
 }
 
-.image a {
+.slider a {
   -webkit-transition: font-size .5s;
   transition: font-size .5s;
 }
 
-.image a:hover {
+.slider a:hover {
   font-size: 1.3125rem;
 }
 
@@ -77,6 +77,27 @@ a:hover {
   text-align: center;
   width: 30%;
   border: 5px solid #6F7762;
+}
+
+@media screen and (max-width: 720px) {
+  .main1 {
+    font-size: 3rem;
+  }
+  .main2, .slider .content-wrap .content-body h2 {
+    font-size: 1.75rem;
+  }
+  .special {
+    font-size: 1rem;
+  }
+  .text {
+    font-size: 0.8125rem;
+  }
+  .org, .main-content-services h3, .design .item .item-container a, .navbar .nav-link {
+    font-size: 0.8125rem;
+  }
+  .button {
+    font-size: 0.8125rem;
+  }
 }
 
 body {
@@ -92,7 +113,7 @@ body {
   margin-bottom: 0;
 }
 
-.main2, .image .content-wrap .content-body h2 {
+.main2, .slider .content-wrap .content-body h2 {
   font-size: 2.25rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -123,12 +144,12 @@ body {
   line-height: 1.625rem;
 }
 
-.image a {
+.slider a {
   -webkit-transition: font-size .5s;
   transition: font-size .5s;
 }
 
-.image a:hover {
+.slider a:hover {
   font-size: 1.3125rem;
 }
 
@@ -153,24 +174,64 @@ a:hover {
   border: 5px solid #6F7762;
 }
 
+@media screen and (max-width: 720px) {
+  .main1 {
+    font-size: 3rem;
+  }
+  .main2, .slider .content-wrap .content-body h2 {
+    font-size: 1.75rem;
+  }
+  .special {
+    font-size: 1rem;
+  }
+  .text {
+    font-size: 0.8125rem;
+  }
+  .org, .main-content-services h3, .design .item .item-container a, .navbar .nav-link {
+    font-size: 0.8125rem;
+  }
+  .button {
+    font-size: 0.8125rem;
+  }
+}
+
+.intro, .banner .bannercontent, .instagram, .main-content-services, .development, .design, .article-content {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.main-content, .instagram .instatext, .development .item, .design .item, .article-content .text-intro {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: -webkit-transform 1s 0.25s ease;
+  transition: -webkit-transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease;
+  transition: transform 1s 0.25s ease, -webkit-transform 1s 0.25s ease;
+}
+
+.is-visible.main-content, .instagram .is-visible.instatext, .development .is-visible.item, .design .is-visible.item, .article-content .is-visible.text-intro {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .home {
   overflow: hidden;
 }
 
-.image {
+.slider {
   position: absolute;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
 
-.image .content-wrap {
+.slider .content-wrap {
   position: absolute;
   width: 100vw;
   height: 100vh;
 }
 
-.image .content-wrap .content-body {
+.slider .content-wrap .content-body {
   width: 25%;
   position: absolute;
   top: 40%;
@@ -179,7 +240,7 @@ a:hover {
           transform: translateY(-50%);
 }
 
-.image .content-wrap img {
+.slider .content-wrap img {
   position: absolute;
   height: 100vh;
   left: 50%;
@@ -188,23 +249,23 @@ a:hover {
   z-index: -1;
 }
 
-.image.bottom {
+.slider.bottom {
   background: white;
   z-index: 1;
   left: -7px;
 }
 
-.image.bottom .content-body {
+.slider.bottom .content-body {
   right: 5%;
 }
 
-.image.top {
+.slider.top {
   background: white;
   z-index: 2;
   width: 50%;
 }
 
-.image.top .content-body {
+.slider.top .content-body {
   left: 5%;
 }
 
@@ -221,6 +282,25 @@ a:hover {
           transform-origin: top;
 }
 
+@media screen and (max-width: 720px) {
+  .desktop, .handle {
+    display: none;
+  }
+}
+
+.image .content-wrap {
+  height: 85vh;
+  width: 100%;
+  background: url(../../Test-Portfolio-2563.jpg) center 80% no-repeat;
+  background-size: contain;
+  margin: 0;
+}
+
+.image .content-wrap .content-body {
+  -webkit-transform: translateY(-160px);
+          transform: translateY(-160px);
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -234,7 +314,7 @@ body {
   margin-bottom: 0;
 }
 
-.main2, .image .content-wrap .content-body h2 {
+.main2, .slider .content-wrap .content-body h2 {
   font-size: 2.25rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -265,12 +345,12 @@ body {
   line-height: 1.625rem;
 }
 
-.image a {
+.slider a {
   -webkit-transition: font-size .5s;
   transition: font-size .5s;
 }
 
-.image a:hover {
+.slider a:hover {
   font-size: 1.3125rem;
 }
 
@@ -293,6 +373,27 @@ a:hover {
   text-align: center;
   width: 30%;
   border: 5px solid #6F7762;
+}
+
+@media screen and (max-width: 720px) {
+  .main1 {
+    font-size: 3rem;
+  }
+  .main2, .slider .content-wrap .content-body h2 {
+    font-size: 1.75rem;
+  }
+  .special {
+    font-size: 1rem;
+  }
+  .text {
+    font-size: 0.8125rem;
+  }
+  .org, .main-content-services h3, .design .item .item-container a, .navbar .nav-link {
+    font-size: 0.8125rem;
+  }
+  .button {
+    font-size: 0.8125rem;
+  }
 }
 
 .intro, .banner .bannercontent, .instagram, .main-content-services, .development, .design, .article-content {
@@ -490,7 +591,7 @@ body {
   margin-bottom: 0;
 }
 
-.main2, .image .content-wrap .content-body h2 {
+.main2, .slider .content-wrap .content-body h2 {
   font-size: 2.25rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -521,12 +622,12 @@ body {
   line-height: 1.625rem;
 }
 
-.image a {
+.slider a {
   -webkit-transition: font-size .5s;
   transition: font-size .5s;
 }
 
-.image a:hover {
+.slider a:hover {
   font-size: 1.3125rem;
 }
 
@@ -549,6 +650,27 @@ a:hover {
   text-align: center;
   width: 30%;
   border: 5px solid #6F7762;
+}
+
+@media screen and (max-width: 720px) {
+  .main1 {
+    font-size: 3rem;
+  }
+  .main2, .slider .content-wrap .content-body h2 {
+    font-size: 1.75rem;
+  }
+  .special {
+    font-size: 1rem;
+  }
+  .text {
+    font-size: 0.8125rem;
+  }
+  .org, .main-content-services h3, .design .item .item-container a, .navbar .nav-link {
+    font-size: 0.8125rem;
+  }
+  .button {
+    font-size: 0.8125rem;
+  }
 }
 
 .intro, .banner .bannercontent, .instagram, .main-content-services, .development, .design, .article-content {
@@ -649,7 +771,7 @@ body {
   margin-bottom: 0;
 }
 
-.main2, .image .content-wrap .content-body h2 {
+.main2, .slider .content-wrap .content-body h2 {
   font-size: 2.25rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -680,12 +802,12 @@ body {
   line-height: 1.625rem;
 }
 
-.image a {
+.slider a {
   -webkit-transition: font-size .5s;
   transition: font-size .5s;
 }
 
-.image a:hover {
+.slider a:hover {
   font-size: 1.3125rem;
 }
 
@@ -708,6 +830,27 @@ a:hover {
   text-align: center;
   width: 30%;
   border: 5px solid #6F7762;
+}
+
+@media screen and (max-width: 720px) {
+  .main1 {
+    font-size: 3rem;
+  }
+  .main2, .slider .content-wrap .content-body h2 {
+    font-size: 1.75rem;
+  }
+  .special {
+    font-size: 1rem;
+  }
+  .text {
+    font-size: 0.8125rem;
+  }
+  .org, .main-content-services h3, .design .item .item-container a, .navbar .nav-link {
+    font-size: 0.8125rem;
+  }
+  .button {
+    font-size: 0.8125rem;
+  }
 }
 
 .intro, .banner .bannercontent, .instagram, .main-content-services, .development, .design, .article-content {
@@ -822,7 +965,7 @@ body {
   margin-bottom: 0;
 }
 
-.main2, .image .content-wrap .content-body h2 {
+.main2, .slider .content-wrap .content-body h2 {
   font-size: 2.25rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -853,12 +996,12 @@ body {
   line-height: 1.625rem;
 }
 
-.image a {
+.slider a {
   -webkit-transition: font-size .5s;
   transition: font-size .5s;
 }
 
-.image a:hover {
+.slider a:hover {
   font-size: 1.3125rem;
 }
 
@@ -881,6 +1024,27 @@ a:hover {
   text-align: center;
   width: 30%;
   border: 5px solid #6F7762;
+}
+
+@media screen and (max-width: 720px) {
+  .main1 {
+    font-size: 3rem;
+  }
+  .main2, .slider .content-wrap .content-body h2 {
+    font-size: 1.75rem;
+  }
+  .special {
+    font-size: 1rem;
+  }
+  .text {
+    font-size: 0.8125rem;
+  }
+  .org, .main-content-services h3, .design .item .item-container a, .navbar .nav-link {
+    font-size: 0.8125rem;
+  }
+  .button {
+    font-size: 0.8125rem;
+  }
 }
 
 .intro, .banner .bannercontent, .instagram, .main-content-services, .development, .design, .article-content {
@@ -997,7 +1161,7 @@ body {
   margin-bottom: 0;
 }
 
-.main2, .image .content-wrap .content-body h2 {
+.main2, .slider .content-wrap .content-body h2 {
   font-size: 2.25rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -1028,12 +1192,12 @@ body {
   line-height: 1.625rem;
 }
 
-.image a {
+.slider a {
   -webkit-transition: font-size .5s;
   transition: font-size .5s;
 }
 
-.image a:hover {
+.slider a:hover {
   font-size: 1.3125rem;
 }
 
@@ -1056,6 +1220,27 @@ a:hover {
   text-align: center;
   width: 30%;
   border: 5px solid #6F7762;
+}
+
+@media screen and (max-width: 720px) {
+  .main1 {
+    font-size: 3rem;
+  }
+  .main2, .slider .content-wrap .content-body h2 {
+    font-size: 1.75rem;
+  }
+  .special {
+    font-size: 1rem;
+  }
+  .text {
+    font-size: 0.8125rem;
+  }
+  .org, .main-content-services h3, .design .item .item-container a, .navbar .nav-link {
+    font-size: 0.8125rem;
+  }
+  .button {
+    font-size: 0.8125rem;
+  }
 }
 
 .intro, .banner .bannercontent, .instagram, .main-content-services, .development, .design, .article-content {
@@ -1356,26 +1541,24 @@ a:hover {
   width: 50%;
 }
 
-@media screens and (max-width: 720px) {
-  .square-container {
-    display: none;
-  }
-}
-
-html, .wrapper, .menu {
+html, html .menu, .wrapper .menu, .wrapper {
   margin: 0;
   padding: 0;
   width: 100vw;
   overflow-x: hidden;
 }
 
+html .menu, .wrapper .menu .menu, .wrapper .menu {
+  overflow: visible;
+}
+
 .navbar {
-  top: 0;
-  width: 100vw;
-  height: 80px;
   background-color: #6F7762;
+  width: 100vw;
+  top: 0;
   margin: 0;
   padding: 0px 15px;
+  height: 80px !important;
 }
 
 .navbar .navbar-brand h1 {
@@ -1383,15 +1566,99 @@ html, .wrapper, .menu {
 }
 
 .navbar .nav-link {
-  margin: 0px 30px;
+  margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .nav-link {
+    margin: 0px 30px;
+  }
 }
 
 .navbar .nav-link .active, .navbar .nav-link:hover {
   font-weight: 700;
 }
 
+.navbar button:before, .navbar button:after {
+  border: none;
+}
+
+.navbar button:hover {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+.navbar .navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background: none;
+  width: 20px;
+  margin: 1em;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon:after, .navbar .navbar-toggler .navbar-toggler-icon:before, .navbar .navbar-toggler .navbar-toggler-icondiv {
+  background-color: #fff;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon.clicked:before {
+  -webkit-transform: translateY(6px) rotate(135deg);
+          transform: translateY(6px) rotate(135deg);
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon.clicked:after {
+  -webkit-transform: translateY(-6px) rotate(-135deg);
+          transform: translateY(-6px) rotate(-135deg);
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon.clicked div {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+@media screen and (max-width: 992px) {
+  .navbar .collapse, .navbar .collapsing, .navbar .show {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    height: 0px;
+    background: #6F7762;
+    padding: 30px;
+    margin: 0;
+    text-align: right;
+    -webkit-transition: height .2s;
+    transition: height .2s;
+  }
+  .navbar .collapse .navbar-nav, .navbar .collapsing .navbar-nav, .navbar .show .navbar-nav {
+    -webkit-transform: translateY(70px);
+            transform: translateY(70px);
+  }
+  .navbar .collapsing {
+    height: 0 !important;
+  }
+  .navbar .show {
+    height: 100vh;
+  }
+}
+
 .nav-item:last-child .nav-link {
   margin-right: 0px !important;
+}
+
+.nav-item:last-child .nav-link a:active {
+  font-weight: 700;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {

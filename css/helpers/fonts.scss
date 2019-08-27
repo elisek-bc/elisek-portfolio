@@ -87,3 +87,25 @@ a {
     width: 30%;
     border: 5px solid $green;
 }
+
+@media screen and (max-width: 720px) {
+    .main1 {
+        font-size: rem(48);
+    }
+    .main2 {
+        font-size: rem(28);
+    }
+    .special {
+        font-size: rem(16);
+    }
+    .text {
+        font-size: rem(13);
+    }
+    %navfont {
+        font-size: rem(13);
+    }
+
+    .button {
+        font-size: rem(13);
+    }
+}

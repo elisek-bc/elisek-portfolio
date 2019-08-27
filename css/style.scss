@@ -16,22 +16,26 @@
 
 
 // MAIN LAYOUT
-html, .wrapper, .menu {
+html, .wrapper {
     margin: 0;
     padding: 0;
     width: 100vw;
     overflow-x: hidden;
+    .menu {
+        @extend html;
+        overflow: visible;
+    }
 }
 
 // NAVBAR
 
 .navbar {
-    top:0;
-    width: 100vw;
-    height: 80px;
     background-color: $green;
+    width: 100vw;
+    top:0;
     margin: 0;
     padding: 0px 15px;
+    height: 80px !important;
     
     .navbar-brand h1 {
         font-size: rem(24);
@@ -39,10 +43,90 @@ html, .wrapper, .menu {
     .nav-link {
         @extend %navfont;
         @extend .invert;
-        margin: 0px 30px;
+        margin: 0;
+
+        @media screen and (min-width: 992px){
+            margin: 0px 30px;
+        }
 
         .active, &:hover  {
         font-weight: $bold;
+        }
+    }
+
+    button {
+        &:before, &:after {
+            border: none;
+        }
+
+        &:hover {
+            animation: none;
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        .navbar-toggler-icon{
+            background: none;
+            width: $xxs/2;
+            margin: 1em;
+
+            &:after, 
+            &:before, 
+            &div {
+                background-color: #fff;
+                content: '';
+                display: block;
+                height: 5px;
+                margin: 7px 0;
+                transition: all .2s ease-in-out;
+            }
+
+            &.clicked:before {
+                transform: translateY(6px) rotate(135deg);
+            }
+              
+            &.clicked:after {
+                transform: translateY(-6px) rotate(-135deg);
+            }
+              
+            &.clicked div {
+                transform: scale(0);
+            }
+        }
+    }
+
+    @media screen and (max-width: 992px){
+        .collapse {
+            z-index: -1;
+            position: absolute;
+            right: 0;
+            top: 0px;
+            height: 0px;
+            background: $green; 
+            padding: 30px;
+            margin:0;
+            text-align: right;
+            transition: height .2s;
+
+            .navbar-nav {
+                transform: translateY(70px);
+            }
+        }
+
+        .collapsing {
+            @extend .collapse;
+            height: 0!important;
+        }
+
+        .show {
+            @extend .collapse;
+            height: 100vh;
         }
     }
 }
@@ -50,13 +134,17 @@ html, .wrapper, .menu {
 .nav-item:last-child {
     .nav-link {
         margin-right: 0px !important;
-    }      
+        a:active {
+            font-weight: $bold;
+        }
+    }     
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0;
 }
+
 
 // FONT RELATED
 

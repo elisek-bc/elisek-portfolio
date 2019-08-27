@@ -62,4 +62,25 @@ a:hover {
   width: 30%;
   border: 5px solid #6F7762;
 }
+
+@media screen and (max-width: 720px) {
+  .main1 {
+    font-size: 3rem;
+  }
+  .main2 {
+    font-size: 1.75rem;
+  }
+  .special {
+    font-size: 1rem;
+  }
+  .text {
+    font-size: 0.8125rem;
+  }
+  .org {
+    font-size: 0.8125rem;
+  }
+  .button {
+    font-size: 0.8125rem;
+  }
+}
 /*# sourceMappingURL=fonts.css.map */
