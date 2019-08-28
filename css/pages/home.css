@@ -167,16 +167,17 @@ a:hover {
   }
 }
 
-.image .content-wrap {
-  height: 85vh;
-  width: 100%;
-  background: url(../../Test-Portfolio-2563.jpg) center 85% no-repeat;
-  background-size: contain;
-  margin: 0;
+.image .content-body {
+  margin-top: 40px;
+  height: 25%;
 }
 
-.image .content-wrap .content-body {
-  -webkit-transform: translateY(-160px);
-          transform: translateY(-160px);
+.image img {
+  width: 100%;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=home.css.map */
