@@ -45,6 +45,7 @@ html, .wrapper {
         @extend %navfont;
         @extend .invert;
         margin: 0;
+        padding-right: 15px;
 
         @media screen and (min-width: 992px){
             margin: 0px 30px;
@@ -134,12 +135,19 @@ html, .wrapper {
 
 .nav-item:last-child {
     .nav-link {
-        margin-right: 0px !important;
+        margin-right: 15px;
+
+        @media screen and (max-width: 960px) {
+            margin-right: 0;
+        }
+
         a:active {
             font-weight: $bold;
         }
-    }     
+    }    
 }
+
+
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0;
