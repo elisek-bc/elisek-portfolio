@@ -179,6 +179,12 @@ a:hover {
   border-color: #E2CBB0;
 }
 
+@media screen and (max-width: 720px) {
+  .development .item {
+    margin-top: 40px;
+  }
+}
+
 .backend-container {
   margin-bottom: 80px;
 }

@@ -73,6 +73,12 @@
             }
         }
     }
+
+    @media screen and (max-width: 720px){
+        .item {
+            margin-top: $xxs;
+        }
+    }
 };
 
 .backend-container {

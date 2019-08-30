@@ -31,11 +31,11 @@
             .article-title{
                 height: 100%;
 
-                h1 {
+                h2 {
                     margin-bottom: 10px;
                 }
                 
-                h2 {
+                h3 {
                     margin-bottom: 50px;
                 }
 
@@ -45,10 +45,26 @@
                     height: inherit;
                     left: 50%;
                     transform: translateX(-50%);
-                }
-                
+                }              
             }
         }
+    }
+}
+
+@media screen and (max-width: 720px) { 
+
+    .article-start {
+        height: 95vh;
+    }
+
+    .colorrect-article {
+        @include scroll-animation(.5s,0vh,70vh,height);  
+    }
+
+    img {
+        height: auto;
+        max-width: 95%;
+        object-fit: contain;
     }
 }
 
