@@ -906,6 +906,10 @@ a:hover {
   background: url(../../thumbs/mario&luigi-voorbeeld.jpg) top center no-repeat;
 }
 
+.development .item .portfolio-image#pokedex {
+  background: url(../../thumbs/pokedex-voorbeeld.jpg) top center no-repeat;
+}
+
 .development .item .portfolio-image.left {
   left: 50px;
   right: auto;

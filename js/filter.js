@@ -3,7 +3,7 @@
 
 var buttons = document.getElementsByClassName('buttons')[0];
 var buttonArray = Array.from(buttons.querySelectorAll('button'));
-var allItems = Array.from(document.querySelectorAll('.item'));
+var allItems = Array.from(document.querySelectorAll('.front-end'));
 console.log(allItems);
 
 const toggleActiveClass = (active) => {
@@ -38,8 +38,8 @@ const setImageHeight = () => {
     allItems.forEach((item) => {
     const image = item.querySelector('.portfolio-image');
     const text = item.querySelector('.portfolio-text');
-    console.log(text.clientHeight)
-    image.style.height = text.clientHeight + 200 + "px";
+    console.log(image);
+    image.style.height = text.clientHeight + 100 + "px";
     })
 }
 
