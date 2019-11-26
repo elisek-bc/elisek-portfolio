@@ -146,7 +146,7 @@ a:hover {
 
 .headerimage {
   height: 375px;
-  background: url("../../ElisePhotoCV.jpg") center center no-repeat;
+  background: url("/ElisePhotoCV.jpg") center center no-repeat;
   background-size: cover;
   margin-top: 160px;
   -webkit-transform: translateY(-20px);
