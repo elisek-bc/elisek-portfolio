@@ -3,7 +3,7 @@
 
 var buttons = document.getElementsByClassName('buttons')[0];
 var buttonArray = Array.from(buttons.querySelectorAll('button'));
-var allItems = Array.from(document.querySelectorAll('.front-end'));
+var allItems = Array.from(document.querySelectorAll('.item'));
 console.log(allItems);
 
 const toggleActiveClass = (active) => {
