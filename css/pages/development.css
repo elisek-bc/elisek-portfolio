@@ -136,15 +136,15 @@ a:hover {
 }
 
 .development .item .portfolio-image#kattenhotel {
-  background: url(../../thumbs/kattenhotel-voorbeeld.jpg) bottom center no-repeat;
+  background: url(../thumbs/kattenhotel-voorbeeld.jpg) bottom center no-repeat;
 }
 
 .development .item .portfolio-image#restaurant {
-  background: url(../../thumbs/mario&luigi-voorbeeld.jpg) top center no-repeat;
+  background: url(../thumbs/mario&luigi-voorbeeld.jpg) top center no-repeat;
 }
 
 .development .item .portfolio-image#pokedex {
-  background: url(../../thumbs/pokedex-voorbeeld.jpg) bottom center no-repeat;
+  background: url(../thumbs/pokedex-voorbeeld.jpg) bottom center no-repeat;
 }
 
 .development .item .portfolio-image.left {

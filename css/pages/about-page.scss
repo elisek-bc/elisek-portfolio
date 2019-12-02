@@ -35,7 +35,7 @@
 
 .headerimage {
     height: $medium;
-    background: url("/ElisePhotoCV.jpg") center center no-repeat;
+    background: url("../ElisePhotoCV.jpg") center center no-repeat;
     background-size: cover;
     margin-top: $small;
     @include scroll-animation(.5s,translateY(-20px),translateY(0),transform);

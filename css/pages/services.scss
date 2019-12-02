@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.services {
+    min-height: 100vh;
+}
+
 .main-content-services {
     @extend %boxedcontent;
     margin-bottom: 80px !important;

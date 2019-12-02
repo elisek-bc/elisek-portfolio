@@ -51,13 +51,16 @@ html, .wrapper {
             margin: 0px 30px;
         }
 
-        .active, &:hover  {
+        &.active,
+        &:active, 
+        &:hover  {
         font-weight: $bold;
         }
     }
 
     button {
-        &:before, &:after {
+        &:before, 
+        &:after {
             border: none;
         }
 
