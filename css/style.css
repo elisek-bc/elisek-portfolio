@@ -697,6 +697,10 @@ a:hover {
   position: relative;
 }
 
+.services {
+  min-height: 100vh;
+}
+
 .main-content-services {
   margin-bottom: 80px !important;
 }
@@ -1938,11 +1942,14 @@ button:hover:after {
           user-select: none;
   color: #1D1D1B;
   margin: 0 8px;
+  cursor: pointer;
 }
 
-.filter button:focus, .filter button:active {
+.filter button:focus, .filter button:active, .filter button.active {
   outline: none;
-  border-color: inherit;
+  color: #6F7762;
+  font-weight: 700;
+  border-color: #1D1D1B;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -1953,10 +1960,6 @@ button:hover:after {
 
 .filter button:last-child {
   margin: 0 0 0 8px;
-}
-
-.filter button.active {
-  font-weight: 700;
 }
 
 .linkbox {

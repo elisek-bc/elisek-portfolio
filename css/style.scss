@@ -393,10 +393,13 @@ button {
         user-select: none;
         color: $darkgrey;
         margin: 0 8px;
+        cursor: pointer;
 
-        &:focus, &:active {
+        &:focus, &:active, &.active {
             outline: none;
-            border-color: inherit;
+            color: $green;
+            font-weight: $bold;
+            border-color: $darkgrey;
             -webkit-box-shadow: none;
             box-shadow: none;
         }
@@ -407,10 +410,6 @@ button {
 
         &:last-child {
             margin: 0 0 0 8px;
-        }
-
-        &.active {
-            font-weight: $bold;
         }
     }
 } 
