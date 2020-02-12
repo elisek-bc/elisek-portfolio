@@ -181,6 +181,7 @@ a:hover {
 
 .development .item.back-end .org {
   border-color: #E2CBB0;
+  min-width: 120px;
 }
 
 @media screen and (max-width: 720px) {
